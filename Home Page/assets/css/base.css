@@ -1,0 +1,40 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+:root {
+    --blue-color: #1497E2;
+    --white-color: #fff;
+    --black-color: #333;
+    --dark-color: #000;
+    --green-color: #2ecc71;
+    --dark-green: #20914f;
+    --super-dark-green: #103f24;
+    --red-color: #e74c3c;
+    --yellow-color: #f6dd04;
+    --orange-color: #ff7d00;
+    --header-height: 100px;
+    --light-grey: #eee;
+    --font-weight-bold: 600;
+}
+* {
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+img {
+    pointer-events: none;
+}
+.overlay {
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+/* Default Display Flex */
+.header, .logo, .navbar__list, .user-info
+,.navbar__coin-reward, .user__img
+,.user__show-more__item a, .navbar__coin-reward__icon, .category__item
+,.category__describe, .filter, .voucher__value  {
+    display: flex;
+    align-items: center;
+}

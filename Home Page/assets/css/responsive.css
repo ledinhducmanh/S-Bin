@@ -1,0 +1,49 @@
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+/* PC low resolution */ 
+@media (min-width: 1024px) and (max-width: 1239px) {
+    
+
+}
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+    .voucher__name {
+        font-size: 16px;
+    }
+}
+/* Tablet */ 
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    
+    
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+    /* Header */
+    body {
+        padding: 0 20px;
+    }
+    .logo a {
+        font-size: 18px;
+    }
+    .navbar__coin-reward {
+        font-size: 12px;
+    }
+    .navbar__coin-reward__total, .navbar__coin-reward__coin {
+        padding: 5px;
+    }
+    .user__show-more__item a {
+        font-size: 12px;
+    }
+}
