@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Bin Home Page</title>
+    <!-- Css Link File -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.min.css">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="grid wide">
+            <div class="header flex-center">
+                <div class="logo flex-center">
+                    <a href="/"><img src="../assets/img/logo.png" ></a><a href="/">S-Bin</a>
+                </div>
+                <nav class="navbar hide-on-tablet-mobile">
+                    <ul class="navbar__list flex-center">
+                        <li class="navbar__item"><a class="navbar__link" href="/">My Offer</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">Top Ranking</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">Event</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">QR Scanner</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info flex-center">
+                    <div class="navbar__coin-reward flex-center">
+                        <div class="navbar__coin-reward__icon flex-center">
+                            <span>2500</span>
+                            <img class="coin" src="../assets/img/coin.png">
+                        </div>
+                        <div class="navbar__coin-reward__total">
+                            <span>5000 RCL</span>
+                        </div>
+                    </div>
+                    <div class="user__profile">
+                        <div class="user__img flex-center">
+                            <img src="../assets/img/MY.jpg">
+                            <p class="user__name hide-on-mobile">Le Manh</p>
+                            <i class="user__icon fa-solid fa-angle-down hide-on-mobile"></i>
+                        </div>
+                        <div class="user__show-more">
+                            <ul class="user__show-more__list">
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="./settings.html"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="menu-mobile__btn hide-on-pc" for="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input class="menu-input" type="checkbox" hidden id="menu-mobile">
+                <label for="menu-mobile" class="overlay"></label>
+                <div class="menu-mobile">
+                    <ul>
+                        <li><a href="/">My Offer</a></li>
+                        <li><a href="/">Top Ranking</a></li>
+                        <li><a href="/">Event</a></li>
+                        <li><a href="/">QR Scanner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main id="main">
+        <div class="grid wide">
+            <h1 class="heading__h1">Earning History</h1>
+            <div class="flex-center">
+                <input id="history-search" type="text" class="input-form" placeholder="Search history">
+                <i onclick="filterSearch()" class="hide-on-mobile search-btn fa-solid fa-search"></i>
+                <select id="duration" name="duration">
+                    <option value="all-time">All time</option>
+                    <option value="24h">24 H</option>
+                    <option value="7d">7D</option>
+                    <option value="14d">14D</option>
+                    <option value="30d">30D</option>
+                </select>
+            </div>
+            <div class="history-table">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr class="table-header">
+                                <th>ID</th>
+                                <th>Type</th>
+                                <th>Location</th>
+                                <th>Coin</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-item">
+                                <td class="id">532530</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Trung</td>
+                                <td class="coin-earned">5 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">02 : 24 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">289348</td>
+                                <td class="type">Mental</td>
+                                <td class="location">Linh Xuân</td>
+                                <td class="coin-earned">15 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">08 : 43 pm</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">1238501</td>
+                                <td class="type">Papers</td>
+                                <td class="location">Linh Chiểu</td>
+                                <td class="coin-earned">5 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">10 : 24 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">443923</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Tây</td>
+                                <td class="coin-earned">10 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">7 : 24 pm</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">597623</td>
+                                <td class="type">Others</td>
+                                <td class="location">Linh Đông</td>
+                                <td class="coin-earned">20 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">06 : 43 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">600000</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Tinh</td>
+                                <td class="coin-earned">15 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">04 : 32 pm</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">532530</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Trung</td>
+                                <td class="coin-earned">5 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">02 : 24 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">289348</td>
+                                <td class="type">Mental</td>
+                                <td class="location">Linh Xuân</td>
+                                <td class="coin-earned">15 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">08 : 43 pm</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">1238501</td>
+                                <td class="type">Papers</td>
+                                <td class="location">Linh Chiểu</td>
+                                <td class="coin-earned">5 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">10 : 24 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">443923</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Tây</td>
+                                <td class="coin-earned">10 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">7 : 24 pm</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">597623</td>
+                                <td class="type">Others</td>
+                                <td class="location">Linh Đông</td>
+                                <td class="coin-earned">20 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">06 : 43 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">600000</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Tinh</td>
+                                <td class="coin-earned">15 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">04 : 32 pm</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">532530</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Trung</td>
+                                <td class="coin-earned">5 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">02 : 24 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">289348</td>
+                                <td class="type">Mental</td>
+                                <td class="location">Linh Xuân</td>
+                                <td class="coin-earned">15 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">08 : 43 pm</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">1238501</td>
+                                <td class="type">Papers</td>
+                                <td class="location">Linh Chiểu</td>
+                                <td class="coin-earned">5 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">10 : 24 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">443923</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Tây</td>
+                                <td class="coin-earned">10 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">7 : 24 pm</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">597623</td>
+                                <td class="type">Others</td>
+                                <td class="location">Linh Đông</td>
+                                <td class="coin-earned">20 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">06 : 43 am</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td class="id">600000</td>
+                                <td class="type">Plastics</td>
+                                <td class="location">Linh Tinh</td>
+                                <td class="coin-earned">15 <span><img class="coin" src="../assets/img/coin.png"></span></td>
+                                <td class="date">04 : 32 pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        var historySearch = document.getElementById("history-search");
+
+        historySearch.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                filterSearch();
+            }
+        });
+
+        var filterSearch = () => {
+            var filter = historySearch.value.trim().toUpperCase();
+            var tableItems = document.querySelectorAll('.table-item');
+            
+            for (var i = 0; i < tableItems.length; i++) {
+                var idElement = tableItems[i].querySelector('.id');
+                var typeElement = tableItems[i].querySelector('.type');
+                var locationElement = tableItems[i].querySelector('.location');
+                var coinEarnedElement = tableItems[i].querySelector('.coin-earned');
+                var dateElement = tableItems[i].querySelector('.date');
+
+                var idValue = idElement ? (idElement.textContent || idElement.innerText) : "";
+                var typeValue = typeElement ? (typeElement.textContent || typeElement.innerText) : "";
+                var locationValue = locationElement ? (locationElement.textContent || locationElement.innerText) : "";
+                var coinEarnedValue = coinEarnedElement ? (coinEarnedElement.textContent || coinEarnedElement.innerText) : "";
+                var dateValue = dateElement ? (dateElement.textContent || dateElement.innerText) : "";
+
+                if (idValue.indexOf(filter) > -1 || 
+                    typeValue.toUpperCase().indexOf(filter) > -1 ||
+                    locationValue.toUpperCase().indexOf(filter) > -1 ||
+                    coinEarnedValue.toUpperCase().indexOf(filter) > -1 ||
+                    dateValue.toUpperCase().indexOf(filter) > -1) {
+                    tableItems[i].style.display = "";
+                } else {
+                    tableItems[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="grid wide">
+            <div class="footer__privacy flex-center">
+                <div class="logo">
+                    <a href="/"><img src="../assets/img/logo.png" ></a>
+                </div>
+                <div class="footer__privacy--list flex-center">
+                    <span class="footer__privacy--item"><a href="../site/about.html#">About</a></span>
+                    <span class="footer__privacy--item"><a href="../site/privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="./site/term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="./site/bug-bunty.html">Bug Bounty</a></span>
+                </div>
+            </div>
+            <div class="footer__social flex-center">
+                <div class="footer__copyright">
+                    Copyright © 2024 S-Bin. All Rights Reserved.
+                </div>
+                <div class="footer__social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

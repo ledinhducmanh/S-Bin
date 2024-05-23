@@ -66,7 +66,7 @@
     .user__show-more__item a {
         font-size: 12px;
     }
-    .table__coin {
+    .table__coin, .history-table .coin  {
         display: none;
     }
     .footer__social-media a {
@@ -80,5 +80,8 @@
     .footer__privacy--item a {
         font-size: 9.5px;
         margin: 0 8px;
+    }
+    .paragraph, .bullet {
+        text-align: left !important;
     }
 }

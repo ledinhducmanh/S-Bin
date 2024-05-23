@@ -54,7 +54,7 @@
                                     <a class="flex-center" href="#"><i class="fa-regular fa-message"></i><span>Notification</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                    <a class="flex-center" href="./options/history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
                                 </li>
                                 <li class="user__show-more__item">
                                     <a class="flex-center" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
@@ -129,7 +129,7 @@
                     <div class="col l-9 m-12 c-12">
                         <div class="filter flex-center">
                             <input id="filter__search" class="input-form" type="text" placeholder="Search items by keyword, price, etc">
-                            <i class="filter__icon fa-solid fa-search" onclick="filterSearch()"></i>
+                            <i class="search-btn fa-solid fa-search" onclick="filterSearch()"></i>
                         </div>
                         <div class="row">
                             <div class="col l-4 m-4 c-6">
@@ -256,89 +256,92 @@
                     <div class="col l-6 m-6 c-12">
                         <div class="ranking-table">
                             <div class="ranking-table__tab">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Place</th>
-                                            <th scope="col">User</th>
-                                            <th scope="col">RCL</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">04</th>
-                                            <td class="user_circle flex-center">
-                                                <span style="background-image: url('/assets/img/My.jpg');" class="circle"></span>
-                                                <span>Yeremias NJ</span>
-                                            </td>
-                                            <td>4800
-                                                <img class="table__coin coin" src="/assets/img/coin.png">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">05</th>
-                                            <td class="user_circle flex-center">
-                                                <span style="background-color: #4682b4;" class="circle"></span> 
-                                                <span>John Pentol</span>
-                                            </td>
-                                            <td>4500
-                                                <img class="table__coin coin" src="/assets/img/coin.png">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">06</th>
-                                            <td class="user_circle flex-center">
-                                                <span style="background-color: #32cd32;" class="circle"></span> 
-                                                <span>Magda Hera</span>
-                                            </td>
-                                            <td>4000
-                                                <img class="table__coin coin" src="/assets/img/coin.png">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">07</th>
-                                            <td class="user_circle flex-center">
-                                                <span style="background-color: #ff69b4;" class="circle"></span> 
-                                                <span>Danielad Dan</span>
-                                            </td>
-                                            <td>3800
-                                                <img class="table__coin coin" src="/assets/img/coin.png">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">08</th>
-                                            <td class="user_circle flex-center">
-                                                <span style="background-color: #ffa500;" class="circle"></span> 
-                                                <span>Henry</span>
-                                            </td>
-                                            <td>3500
-                                                <img class="table__coin coin" src="/assets/img/coin.png">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">09</th>
-                                            <td class="user_circle flex-center">
-                                                <span style="background-color: #6a5acd;" class="circle"></span> 
-                                                <span>Thomas C</span>
-                                            </td>
-                                            <td>2500
-                                                <img class="table__coin coin" src="/assets/img/coin.png">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">10</th>
-                                            <td class="user_circle flex-center">
-                                                <span style="background-color: #dc143c;" class="circle"></span> 
-                                                <span>Paijoo</span>
-                                            </td>
-                                            <td>1500
-                                                <img class="table__coin coin" src="/assets/img/coin.png">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Place</th>
+                                                <th>User</th>
+                                                <th>RCL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">04</th>
+                                                <td class="user_circle flex-center">
+                                                    <span style="background-image: url('/assets/img/My.jpg');" class="circle"></span>
+                                                    <span>Yeremias NJ</span>
+                                                </td>
+                                                <td>4800
+                                                    <img class="table__coin coin" src="/assets/img/coin.png">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">05</th>
+                                                <td class="user_circle flex-center">
+                                                    <span style="background-color: #4682b4;" class="circle"></span> 
+                                                    <span>John Pentol</span>
+                                                </td>
+                                                <td>4500
+                                                    <img class="table__coin coin" src="/assets/img/coin.png">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">06</th>
+                                                <td class="user_circle flex-center">
+                                                    <span style="background-color: #32cd32;" class="circle"></span> 
+                                                    <span>Magda Hera</span>
+                                                </td>
+                                                <td>4000
+                                                    <img class="table__coin coin" src="/assets/img/coin.png">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">07</th>
+                                                <td class="user_circle flex-center">
+                                                    <span style="background-color: #ff69b4;" class="circle"></span> 
+                                                    <span>Danielad Dan</span>
+                                                </td>
+                                                <td>3800
+                                                    <img class="table__coin coin" src="/assets/img/coin.png">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">08</th>
+                                                <td class="user_circle flex-center">
+                                                    <span style="background-color: #ffa500;" class="circle"></span> 
+                                                    <span>Henry</span>
+                                                </td>
+                                                <td>3500
+                                                    <img class="table__coin coin" src="/assets/img/coin.png">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">09</th>
+                                                <td class="user_circle flex-center">
+                                                    <span style="background-color: #6a5acd;" class="circle"></span> 
+                                                    <span>Thomas C</span>
+                                                </td>
+                                                <td>2500
+                                                    <img class="table__coin coin" src="/assets/img/coin.png">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                <td class="user_circle flex-center">
+                                                    <span style="background-color: #dc143c;" class="circle"></span> 
+                                                    <span>Paijoo</span>
+                                                </td>
+                                                <td>1500
+                                                    <img class="table__coin coin" src="/assets/img/coin.png">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
                                 <div class="table__show-more">
-                                    Show more 
+                                    ═══ Show more ═══
                                 </div>
                             </div>                            
                         </div>
