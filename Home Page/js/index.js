@@ -1,6 +1,13 @@
 // Radio Check and Search Input handle
+var searchInput = document.getElementById("filter__search");
+
+searchInput.addEventListener('keydown',(e) => {
+    if(e.key == 'Enter') {
+        filterSearch(searchInput.value)
+    }
+})
+
 var filterSearch = (valueInputCheck) => {
-    var searchInput = document.getElementById("filter__search");
     var filter = valueInputCheck ? valueInputCheck.trim().toUpperCase() : searchInput.value.trim().toUpperCase();
     var voucherItems = document.querySelectorAll(".voucher__item");
     
@@ -19,7 +26,7 @@ var filterSearch = (valueInputCheck) => {
     }
 };
 // Handle title change
-const titles = [
+var titles = [
     "This is the S-Bin website!",
     "Welcome to our website!",
     "Check out our latest offers!",
@@ -28,11 +35,11 @@ const titles = [
     "Contact us for more info!",
     "Follow us via fb fanpage!",
 ];
-let currentIndex = 0;
+let currentTitleIndex = 0;
 
-function updateTitle() {
-    document.title = titles[currentIndex];
-    currentIndex = (currentIndex + 1) % titles.length;
+var updateTitle = () => {
+    document.title = titles[currentTitleIndex];
+    currentTitleIndex = (currentTitleIndex + 1) % titles.length;
 }
 
-setInterval(updateTitle, 3000);
+setInterval(updateTitle, 5000);

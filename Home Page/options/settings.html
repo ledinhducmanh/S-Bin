@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Bin Home Page</title>
+    <!-- Css Link File -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.min.css">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="grid wide">
+            <div class="header flex-center">
+                <div class="logo flex-center">
+                    <a href="/"><img src="../assets/img/logo.png" ></a><a href="/">S-Bin</a>
+                </div>
+                <nav class="navbar hide-on-tablet-mobile">
+                    <ul class="navbar__list flex-center">
+                        <li class="navbar__item"><a class="navbar__link" href="/">My Offer</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">Top Ranking</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">Event</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">QR Scanner</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info flex-center">
+                    <div class="navbar__coin-reward flex-center">
+                        <div class="navbar__coin-reward__icon flex-center">
+                            <span>2500</span>
+                            <img class="coin" src="../assets/img/coin.png">
+                        </div>
+                        <div class="navbar__coin-reward__total">
+                            <span>5000 RCL</span>
+                        </div>
+                    </div>
+                    <div class="user__profile">
+                        <div class="user__img flex-center">
+                            <img src="../assets/img/MY.jpg">
+                            <p class="user__name hide-on-mobile">Le Manh</p>
+                            <i class="user__icon fa-solid fa-angle-down hide-on-mobile"></i>
+                        </div>
+                        <div class="user__show-more">
+                            <ul class="user__show-more__list">
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="menu-mobile__btn hide-on-pc" for="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input class="menu-input" type="checkbox" hidden id="menu-mobile">
+                <label for="menu-mobile" class="overlay"></label>
+                <div class="menu-mobile">
+                    <ul>
+                        <li><a href="#redeem-gifts">My Offer</a></li>
+                        <li><a href="#top-ranking">Top Ranking</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">QR Scanner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main id="main">
+        <div class="grid wide">
+            <h1 class="heading__h1">Settings</h1>
+            <form action="" method="POST" class="form" id="form-1">
+                <div class="form-group">
+                  <h3 class="heading__h3"><label for="fullname" class="form-label">User name</label></h3>
+                    <input id="fullname" name="fullname" type="text" placeholder="Mark" class="input-form form-control">
+                  <span class="form-message"></span>
+                </div>
+            
+                <div class="form-group">
+                  <h3 class="heading__h3"><label for="email" class="form-label">Email</label></h3>
+                  <input id="email" name="email" type="text" placeholder="email@domain.com" class="input-form form-control">
+                  <span class="form-message"></span>
+                </div>
+            
+                <div class="form-group">
+                  <h3 class="heading__h3"><label for="password" class="form-label">Password</label></h3>
+                  <input id="password" name="password" type="password" placeholder="Enter your new password" class="input-form form-control">
+                  <span class="form-message"></span>
+                </div>
+            
+                <div class="form-group">
+                  <h3 class="heading__h3"><label for="password_comfirmation" class="form-label">Retype your password</label></h3>
+                  <input id="password_comfirmation" name="password_comfirmation" placeholder="Your password" type="password" class="input-form form-control">
+                  <span class="form-message"></span>
+                </div>
+                
+                <div class="form-group">
+                  <h3 class="heading__h3"><label for="avatar" class="form-label">Avatar</label></h3>
+                  <input id="avatar" name="avatar" type="file" class="input-form form-control" style="cursor: pointer;">
+                  <span class="form-message"></span>
+                </div>    
+                <button class="btn form-submit">Save</button>
+              </form>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="grid wide">
+            <div class="footer__privacy flex-center">
+                <div class="logo">
+                    <a href="/"><img src="../assets/img/logo.png" ></a>
+                </div>
+                <div class="footer__privacy--list flex-center">
+                    <span class="footer__privacy--item"><a href="../site/about.html#">About</a></span>
+                    <span class="footer__privacy--item"><a href="../site/privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="./site/term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="./site/bug-bunty.html">Bug Bounty</a></span>
+                </div>
+            </div>
+            <div class="footer__social flex-center">
+                <div class="footer__copyright">
+                    Copyright © 2024 S-Bin. All Rights Reserved.
+                </div>
+                <div class="footer__social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./validation.js"></script>
+    <script>
+    Validator({
+        form: "#form-1",
+        errorSelector: ".form-message",
+        formGroupSelector: ".form-group",
+        rules: [
+        Validator.isRequired("#fullname"), // rule.section, rule.test() are available
+        
+        Validator.isRequired("#email"),
+        Validator.isEmail("#email"),
+        
+        Validator.isRequired("#password"),
+        Validator.isMinLength("#password",8),
+        
+        Validator.isRequired("#password_comfirmation"),
+        Validator.isConfirmed("#password_comfirmation",() => {
+            return $("#form-1 #password").value
+        }),
+
+        // Select inputs have attribute are privacy-checkbox
+        Validator.isRequired("input[name='privacy-checkbox']"),
+        ], 
+        onSubmit: (data) => {
+        // Call API
+        console.log(data)
+        }
+    })
+    </script>
+</body>
+</html>

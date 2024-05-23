@@ -17,30 +17,30 @@
     <!-- Header -->
     <header id="header">
         <div class="grid wide">
-            <div class="header">
-                <div class="logo">
+            <div class="header flex-center">
+                <div class="logo flex-center">
                     <a href="/"><img src="./assets/img/logo.png" ></a><a href="/">S-Bin</a>
                 </div>
                 <nav class="navbar hide-on-tablet-mobile">
-                    <ul class="navbar__list">
-                        <li class="navbar__item"><a class="navbar__link" href="#">My Offer</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#">Top Ranking</a></li>
+                    <ul class="navbar__list flex-center">
+                        <li class="navbar__item"><a class="navbar__link" href="#redeem-gifts">My Offer</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="#top-ranking">Top Ranking</a></li>
                         <li class="navbar__item"><a class="navbar__link" href="#">Event</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#">QR Scaner</a></li> 
+                        <li class="navbar__item"><a class="navbar__link" href="#">QR Scanner</a></li>
                     </ul>
                 </nav>
-                <div class="user-info">
-                    <div class="navbar__coin-reward">
-                        <div class="navbar__coin-reward__icon">
+                <div class="user-info flex-center">
+                    <div class="navbar__coin-reward flex-center">
+                        <div class="navbar__coin-reward__icon flex-center">
                             <span>2500</span>
-                            <img src="./assets/img/coin.png">
+                            <img class="coin" src="./assets/img/coin.png">
                         </div>
                         <div class="navbar__coin-reward__total">
                             <span>5000 RCL</span>
                         </div>
                     </div>
                     <div class="user__profile">
-                        <div class="user__img">
+                        <div class="user__img flex-center">
                             <img src="./assets/img/MY.jpg">
                             <p class="user__name hide-on-mobile">Le Manh</p>
                             <i class="user__icon fa-solid fa-angle-down hide-on-mobile"></i>
@@ -48,16 +48,16 @@
                         <div class="user__show-more">
                             <ul class="user__show-more__list">
                                 <li class="user__show-more__item">
-                                    <a href="#"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                    <a class="flex-center" href="./options/settings.html"><i class="fa-regular fa-user"></i><span>Settings</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a href="#"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                    <a class="flex-center" href="#"><i class="fa-regular fa-message"></i><span>Notification</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                    <a class="flex-center" href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                    <a class="flex-center" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -66,78 +66,77 @@
                 <label class="menu-mobile__btn hide-on-pc" for="menu-mobile">
                     <i class="fa-solid fa-bars"></i>
                 </label>
-                <input class="menu-input" type="radio" hidden id="menu-mobile">
+                <input class="menu-input" type="checkbox" hidden id="menu-mobile">
                 <label for="menu-mobile" class="overlay"></label>
                 <div class="menu-mobile">
                     <ul>
-                        <li><a href="#">My Offer</a></li>
-                        <li><a href="#">Top Ranking</a></li>
+                        <li><a href="#redeem-gifts">My Offer</a></li>
+                        <li><a href="#top-ranking">Top Ranking</a></li>
                         <li><a href="#">Event</a></li>
-                        <li><a href="#">QR Scaner</a></li>
+                        <li><a href="#">QR Scanner</a></li>
                     </ul>
                 </div>
             </div>
-            
         </div>
     </header>
     <!-- Main content -->
     <main id="main">
         <div id="redeem-gifts">
             <div class="grid wide">
-                <h3 class="welcome">Welcome Back!</h3>
-                <h1 class="welcome__name">Le Manh</h1>
-                <h1 class="redeem-gifts__heading"><i class="fa-solid fa-ticket"></i> REDEEM GIFTS</h1>
+                <h3 class="heading__h3">Welcome Back!</h3>
+                <h1 class="heading__h1">Le Manh 🗿</h1>
+                <h1 class="heading-section redeem-gifts__heading"><i class="fa-solid fa-ticket"></i> REDEEM GIFTS</h1>
                 <div class="redeem-gifts row">
                     <div class="col l-3 m-0 c-0">
                         <div class="category">
                             <h3 class="category__heading">Category</h3>
                             <ul class="category__list">
-                                <li class="category__item">
+                                <li class="category__item flex-center">
                                     <input onchange="filterSearch('CGV Voucher')" class="category__checker" type="radio" name="voucher">
-                                    <div class="category__describe">
-                                        <img class="category__brand" src="./assets/img/brand/cgv.png" alt="">
+                                    <div class="category__describe flex-center">
+                                        <img class="category__brand" src="./assets/img/brand/cgv.png">
                                         <p class="category__name">CGV Voucher</p>
                                     </div>
-                                    <p class="category__quantity">(3)</p>
+                                    <p class="category__quantity">(2)</p>
                                 </li>
-                                <li class="category__item">
+                                <li class="category__item flex-center">
                                     <input onchange="filterSearch('Lazada Voucher')" class="category__checker" type="radio" name="voucher">
-                                    <div class="category__describe">
-                                        <img class="category__brand" src="./assets/img/brand/lazada.png" alt="">
+                                    <div class="category__describe flex-center">
+                                        <img class="category__brand" src="./assets/img/brand/lazada.png">
                                         <p class="category__name">Lazada Voucher</p>
                                     </div>
-                                    <p class="category__quantity">(3)</p>
+                                    <p class="category__quantity">(1)</p>
                                 </li>
-                                <li class="category__item">
+                                <li class="category__item flex-center">
                                     <input onchange="filterSearch('Highlands Voucher')"  class="category__checker" type="radio" name="voucher">
-                                    <div class="category__describe">
-                                        <img class="category__brand" src="./assets/img/brand/highlands.png" alt="">
+                                    <div class="category__describe flex-center">
+                                        <img class="category__brand" src="./assets/img/brand/highlands.png">
                                         <p class="category__name">Highlands Voucher</p>
                                     </div>
-                                    <p class="category__quantity">(3)</p>
+                                    <p class="category__quantity">(1)</p>
                                 </li>
-                                <li class="category__item">
+                                <li class="category__item flex-center">
                                     <input onchange="filterSearch('Pizza Hut Voucher')" class="category__checker" type="radio" name="voucher">
-                                    <div class="category__describe">
-                                        <img class="category__brand" src="./assets/img/brand/pizza-hut.png" alt="">
+                                    <div class="category__describe flex-center">
+                                        <img class="category__brand" src="./assets/img/brand/pizza-hut.png">
                                         <p class="category__name">Pizza Hut Voucher</p>
                                     </div>
-                                    <p class="category__quantity">(3)</p>
+                                    <p class="category__quantity">(1)</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col l-9 m-12 c-12">
-                        <div class="filter">
-                            <input id="filter__search" class="filter__search" type="text" placeholder="Search items by keyword, price, etc">
+                        <div class="filter flex-center">
+                            <input id="filter__search" class="input-form" type="text" placeholder="Search items by keyword, price, etc">
                             <i class="filter__icon fa-solid fa-search" onclick="filterSearch()"></i>
                         </div>
                         <div class="row">
                             <div class="col l-4 m-4 c-6">
                                 <div class="voucher__item">
-                                    <div class="voucher__value">
+                                    <div class="voucher__value flex-center">
                                         <span>500</span>
-                                        <img src="./assets/img/coin.png">
+                                        <img class="coin" src="./assets/img/coin.png">
                                     </div>
                                     <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-blue.png');"></div>
                                     <div class="voucher__describe">
@@ -148,9 +147,9 @@
                             </div>
                             <div class="col l-4 m-4 c-6">
                                 <div class="voucher__item">
-                                    <div class="voucher__value">
+                                    <div class="voucher__value flex-center">
                                         <span class="voucher__price">100</span>
-                                        <img src="./assets/img/coin.png">
+                                        <img class="coin" src="./assets/img/coin.png">
                                     </div>
                                     <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-orange.png');"></div>
                                     <div class="voucher__describe">
@@ -161,9 +160,9 @@
                             </div>
                             <div class="col l-4 m-4 c-6">
                                 <div class="voucher__item">
-                                    <div class="voucher__value">
+                                    <div class="voucher__value flex-center">
                                         <span class="voucher__price">600</span>
-                                        <img src="./assets/img/coin.png">
+                                        <img class="coin" src="./assets/img/coin.png">
                                     </div>
                                     <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-yellow.png');"></div>
                                     <div class="voucher__describe">
@@ -174,9 +173,9 @@
                             </div>
                             <div class="col l-4 m-4 c-6">
                                 <div class="voucher__item">
-                                    <div class="voucher__value">
+                                    <div class="voucher__value flex-center">
                                         <span class="voucher__price">300</span>
-                                        <img src="./assets/img/coin.png">
+                                        <img class="coin" src="./assets/img/coin.png">
                                     </div>
                                     <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-light-blue.png');"></div>
                                     <div class="voucher__describe">
@@ -187,9 +186,9 @@
                             </div>
                             <div class="col l-4 m-4 c-6">
                                 <div class="voucher__item">
-                                    <div class="voucher__value">
+                                    <div class="voucher__value flex-center">
                                         <span class="voucher__price">500</span>
-                                        <img src="./assets/img/coin.png">
+                                        <img class="coin" src="./assets/img/coin.png">
                                     </div>
                                     <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-blue.png');"></div>
                                     <div class="voucher__describe">
@@ -204,10 +203,203 @@
                 </div>
             </div>
         </div>
+        <div id="top-ranking">
+            <div class="grid wide">
+                <h1 class="heading-section top-ranking__heading"><i class="fa-solid fa-trophy"></i> TOP RANKING</h1>
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="top-ranking__list">
+                            <div class="top-ranking__item flex-center">
+                                <img class="top-ranking__img" src="./assets/img/rank/top1.png">
+                                <div class="top-ranking__describe flex-center">
+                                    <img class="top-ranking__user hide-on-tablet-mobile" src="./assets/img/My.jpg">
+                                    <div class="top-ranking__description">
+                                        <p class="rank-top rank-top-1"><i class="fa-solid fa-crown"></i> First</p>
+                                        <h5 class="rank-user-name">Khong Phai Le Dinh Duc Manh</h5>
+                                    </div>
+                                </div>
+                                <div class="top-ranking__total-coin flex-center">
+                                    <h4>5.000</h4>
+                                    <img class="coin" src="./assets/img/coin.png">
+                                </div>
+                            </div>
+                            <div class="top-ranking__item flex-center">
+                                <img class="top-ranking__img" src="./assets/img/rank/top2.png">
+                                <div class="top-ranking__describe flex-center">
+                                    <img class="top-ranking__user hide-on-tablet-mobile" src="./assets/img/My.jpg">
+                                    <div class="top-ranking__description">
+                                        <p class="rank-top rank-top-2"><i class="fa-solid fa-crown"></i> Second</p>
+                                        <h5 class="rank-user-name">Siuwe</h5>
+                                    </div>
+                                </div>
+                                <div class="top-ranking__total-coin flex-center">
+                                    <h4>5.000</h4>
+                                    <img class="coin" src="./assets/img/coin.png">
+                                </div>
+                            </div>
+                            <div class="top-ranking__item flex-center">
+                                <img class="top-ranking__img" src="./assets/img/rank/top3.png">
+                                <div class="top-ranking__describe flex-center">
+                                    <img class="top-ranking__user hide-on-tablet-mobile" src="./assets/img/My.jpg">
+                                    <div class="top-ranking__description">
+                                        <p class="rank-top rank-top-3"><i class="fa-solid fa-crown"></i> Third</p>
+                                        <h5 class="rank-user-name">Optimum prime</h5>
+                                    </div>
+                                </div>
+                                <div class="top-ranking__total-coin flex-center">
+                                    <h4>5.000</h4>
+                                    <img class="coin" src="./assets/img/coin.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-6 c-12">
+                        <div class="ranking-table">
+                            <div class="ranking-table__tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Place</th>
+                                            <th scope="col">User</th>
+                                            <th scope="col">RCL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">04</th>
+                                            <td class="user_circle flex-center">
+                                                <span style="background-image: url('/assets/img/My.jpg');" class="circle"></span>
+                                                <span>Yeremias NJ</span>
+                                            </td>
+                                            <td>4800
+                                                <img class="table__coin coin" src="/assets/img/coin.png">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">05</th>
+                                            <td class="user_circle flex-center">
+                                                <span style="background-color: #4682b4;" class="circle"></span> 
+                                                <span>John Pentol</span>
+                                            </td>
+                                            <td>4500
+                                                <img class="table__coin coin" src="/assets/img/coin.png">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">06</th>
+                                            <td class="user_circle flex-center">
+                                                <span style="background-color: #32cd32;" class="circle"></span> 
+                                                <span>Magda Hera</span>
+                                            </td>
+                                            <td>4000
+                                                <img class="table__coin coin" src="/assets/img/coin.png">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">07</th>
+                                            <td class="user_circle flex-center">
+                                                <span style="background-color: #ff69b4;" class="circle"></span> 
+                                                <span>Danielad Dan</span>
+                                            </td>
+                                            <td>3800
+                                                <img class="table__coin coin" src="/assets/img/coin.png">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">08</th>
+                                            <td class="user_circle flex-center">
+                                                <span style="background-color: #ffa500;" class="circle"></span> 
+                                                <span>Henry</span>
+                                            </td>
+                                            <td>3500
+                                                <img class="table__coin coin" src="/assets/img/coin.png">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">09</th>
+                                            <td class="user_circle flex-center">
+                                                <span style="background-color: #6a5acd;" class="circle"></span> 
+                                                <span>Thomas C</span>
+                                            </td>
+                                            <td>2500
+                                                <img class="table__coin coin" src="/assets/img/coin.png">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td class="user_circle flex-center">
+                                                <span style="background-color: #dc143c;" class="circle"></span> 
+                                                <span>Paijoo</span>
+                                            </td>
+                                            <td>1500
+                                                <img class="table__coin coin" src="/assets/img/coin.png">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table__show-more">
+                                    Show more 
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="grid wide">
+            <div class="footer__privacy flex-center">
+                <div class="logo">
+                    <a href="/"><img src="./assets/img/logo.png" ></a>
+                </div>
+                <div class="footer__privacy--list flex-center">
+                    <span class="footer__privacy--item"><a href="/site/about.html">About</a></span>
+                    <span class="footer__privacy--item"><a href="/site/privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="/site/term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="/site/privacy-policy.html">Bug Bounty</a></span>
+                </div>
+            </div>
+            <div class="footer__social flex-center">
+                <div class="footer__copyright">
+                    Copyright © 2024 S-Bin. All Rights Reserved.
+                </div>
+                <div class="footer__social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
 </body>
 </html>

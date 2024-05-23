@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Bin Home Page</title>
+    <!-- Css Link File -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.min.css">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <style>
+        body {
+            background-image: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="grid wide">
+            <div class="header flex-center">
+                <div class="logo flex-center">
+                    <a href="/"><img src="../assets/img/logo.png" ></a><a href="/">S-Bin</a>
+                </div>
+                <nav class="navbar hide-on-tablet-mobile">
+                    <ul class="navbar__list flex-center">
+                        <li class="navbar__item"><a class="navbar__link" href="/">My Offer</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">Top Ranking</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">Event</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/">QR Scanner</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info flex-center">
+                    <div class="navbar__coin-reward flex-center">
+                        <div class="navbar__coin-reward__icon flex-center">
+                            <span>2500</span>
+                            <img class="coin" src="../assets/img/coin.png">
+                        </div>
+                        <div class="navbar__coin-reward__total">
+                            <span>5000 RCL</span>
+                        </div>
+                    </div>
+                    <div class="user__profile">
+                        <div class="user__img flex-center">
+                            <img src="../assets/img/MY.jpg">
+                            <p class="user__name hide-on-mobile">Le Manh</p>
+                            <i class="user__icon fa-solid fa-angle-down hide-on-mobile"></i>
+                        </div>
+                        <div class="user__show-more">
+                            <ul class="user__show-more__list">
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="menu-mobile__btn hide-on-pc" for="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input class="menu-input" type="checkbox" hidden id="menu-mobile">
+                <label for="menu-mobile" class="overlay"></label>
+                <div class="menu-mobile">
+                    <ul>
+                        <li><a href="/">My Offer</a></li>
+                        <li><a href="/">Top Ranking</a></li>
+                        <li><a href="/">Event</a></li>
+                        <li><a href="/">QR Scanner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main id="main">
+        <div class="grid wide">
+            <h3 class="heading__h3">Last updated: May 23, 2024</h3>
+            <h1 class="heading__h1">S-Bin Bug Bounty Program</h1>
+            
+            <h3 class="heading__h3">Introduction</h3>
+            <p class="paragraph">At S-Bin, we prioritize the security and reliability of our electronic waste bin system. We invite security researchers and ethical hackers to help us identify and fix vulnerabilities through our Bug Bounty Program. Your contributions are essential in making S-Bin a safer and more secure product.</p>
+            
+            <h3 class="heading__h3">Scope</h3>
+            <p class="paragraph">The Bug Bounty Program covers the following areas:</p>
+            <ul class="bullet">
+                <li>S-Bin hardware and software components</li>
+                <li>QR code scanning feature</li>
+                <li>User account system and data storage</li>
+                <li>S-Bin web and mobile applications</li>
+            </ul>
+            
+            <h3 class="heading__h3">Eligibility</h3>
+            <p class="paragraph">To be eligible for the Bug Bounty Program, you must:</p>
+            <ul class="bullet">
+                <li>Adhere to the rules and guidelines outlined in this policy</li>
+                <li>Be the first to report a specific vulnerability</li>
+                <li>Not publicly disclose the vulnerability before it is fixed</li>
+                <li>Not be an employee of S-Bin or its affiliates</li>
+            </ul>
+            
+            <h3 class="heading__h3">Submission Guidelines</h3>
+            <p class="paragraph">When submitting a vulnerability report, please include the following details:</p>
+            <ul class="bullet">
+                <li><span class="bold">Description</span>: A detailed description of the vulnerability and its potential impact</li>
+                <li><span class="bold">Reproduction Steps</span>: Step-by-step instructions to reproduce the vulnerability</li>
+                <li><span class="bold">Technical Details</span>: Any relevant technical details, including screenshots, logs, or proof-of-concept code</li>
+                <li><span class="bold">Your Contact Information</span>: Your name and email address</li>
+            </ul>
+            
+            <h3 class="heading__h3">Reward</h3>
+            <p class="paragraph">We offer rewards based on the severity and impact of the reported vulnerability. The rewards are categorized as follows:</p>
+            <ul class="bullet">
+                <li><span class="bold">Critical</span>: Up to $100</li>
+                <li><span class="bold">High</span>: Up to $80</li>
+                <li><span class="bold">Medium</span>: Up to $50</li>
+                <li><span class="bold">Low</span>: Up to $10</li>
+            </ul>
+            
+            <h3 class="heading__h3">Disclosure Policy</h3>
+            <p class="paragraph">We are committed to working with the security community to verify and address reported vulnerabilities promptly. You must not disclose any vulnerability details to the public or third parties until we have resolved the issue and given you permission to do so.</p>
+            
+            <h3 class="heading__h3">Legal</h3>
+            <p class="paragraph">By participating in the S-Bin Bug Bounty Program, you agree to comply with all applicable laws and regulations. Unauthorized access to data or systems, and disruption of S-Bin services, are strictly prohibited and may result in disqualification from the program and legal action.</p>
+            
+            <h3 class="heading__h3">Contact Us</h3>
+            <p class="paragraph">If you have any questions or need further assistance, please contact us at security@s-bin.com.</p>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="grid wide">
+            <div class="footer__privacy flex-center">
+                <div class="logo">
+                    <a href="/"><img src="../assets/img/logo.png" ></a>
+                </div>
+                <div class="footer__privacy--list flex-center">
+                    <span class="footer__privacy--item"><a href="./about.html">About</a></span>
+                    <span class="footer__privacy--item"><a href="./privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="./term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="./bug-bunty.html">Bug Bounty</a></span>
+                </div>
+            </div>
+            <div class="footer__social flex-center">
+                <div class="footer__copyright">
+                    Copyright © 2024 S-Bin. All Rights Reserved.
+                </div>
+                <div class="footer__social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
+</body>
+</html>
