@@ -48,10 +48,10 @@
                         <div class="user__show-more">
                             <ul class="user__show-more__list">
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="#"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                    <a class="flex-center" href="./settings.html"><i class="fa-regular fa-user"></i><span>Settings</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="./notification.html"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                    <a class="flex-center" href="#"><i class="fa-regular fa-message"></i><span>Notification</span></a>
                                 </li>
                                 <li class="user__show-more__item">
                                     <a class="flex-center" href="./history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
@@ -82,39 +82,33 @@
     <!-- Main content -->
     <main id="main">
         <div class="grid wide">
-            <h1 class="heading__h1">Settings</h1>
-            <form action="" method="POST" class="form" id="form-1">
-                <div class="form-group">
-                  <h3 class="heading__h3"><label for="fullname" class="form-label">User name</label></h3>
-                    <input id="fullname" name="fullname" type="text" placeholder="Mark" class="input-form form-control">
-                  <span class="form-message"></span>
+            <h1 class="heading__h1">S-Bin News Feed</h1>
+            <div class="news-feed">
+                <p class="news-feed__title">
+                    <span class="sharp">#</span>S-Bin - Kết Cấu và Nguyên Lý Hoạt Động
+                </p>
+                <p class="news-feed__describe">
+                    Cùng tìm hiểu về kết cấu và nguyên lý hoạt động của S-Bin...
+                </p>
+                <div class="news-feed__video">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/QjQliDFIsnk?si=EWJhNNcKgErs1arO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
-            
-                <div class="form-group">
-                  <h3 class="heading__h3"><label for="email" class="form-label">Email</label></h3>
-                  <input id="email" name="email" type="text" placeholder="email@domain.com" class="input-form form-control">
-                  <span class="form-message"></span>
-                </div>
-            
-                <div class="form-group">
-                  <h3 class="heading__h3"><label for="password" class="form-label">Password</label></h3>
-                  <input id="password" name="password" type="password" placeholder="Enter your new password" class="input-form form-control">
-                  <span class="form-message"></span>
-                </div>
-            
-                <div class="form-group">
-                  <h3 class="heading__h3"><label for="password_comfirmation" class="form-label">Retype your password</label></h3>
-                  <input id="password_comfirmation" name="password_comfirmation" placeholder="Your password" type="password" class="input-form form-control">
-                  <span class="form-message"></span>
-                </div>
-                
-                <div class="form-group">
-                  <h3 class="heading__h3"><label for="avatar" class="form-label">Avatar</label></h3>
-                  <input id="avatar" name="avatar" type="file" class="input-form form-control" style="cursor: pointer;">
-                  <span class="form-message"></span>
-                </div>    
-                <button class="btn form-submit">Save</button>
-              </form>
+                <p class="news-feed__link">
+                    <span>Link video:</span>
+                    <a href="https://www.youtube.com/embed/QjQliDFIsnk?si=EWJhNNcKgErs1arO">https://www.youtube.com/embed/QjQliDFIsnk?si=EWJhNNcKgErs1arO</a>
+                </p>
+                <p class="news-feed__post">
+                    <span>Đăng bởi </span>
+                    <a class="news-feed__poster flex-center" href="#">Lê Mạnh
+                        <svg class="news-feed__verified" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-check" class="svg-inline--fa fa-circle-check NewFeed_icon__SEASG" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#1b74e4" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"></path>
+                        </svg>
+                    </a>
+                    <span> · một ngày trước</span>
+                </p>
+            </div>
         </div>
     </main>
     <!-- Footer -->
@@ -142,35 +136,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="../js/validation.js"></script>
-    <script>
-    Validator({
-        form: "#form-1",
-        errorSelector: ".form-message",
-        formGroupSelector: ".form-group",
-        rules: [
-        Validator.isRequired("#fullname"), // rule.section, rule.test() are available
-        
-        Validator.isRequired("#email"),
-        Validator.isEmail("#email"),
-        
-        Validator.isRequired("#password"),
-        Validator.isMinLength("#password",8),
-        
-        Validator.isRequired("#password_comfirmation"),
-        Validator.isConfirmed("#password_comfirmation",() => {
-            return $("#form-1 #password").value
-        }),
-
-        // Select inputs have attribute are privacy-checkbox
-        Validator.isRequired("input[name='privacy-checkbox']"),
-        ], 
-        onSubmit: (data) => {
-        // Call API
-        console.log(data)
-        }
-    })
-    </script>
 </body>
 </html>
