@@ -35,6 +35,7 @@ html::-webkit-scrollbar-thumb {
 }
 .heading-section {
     margin: 25px 0;
+    text-shadow: 1px 1px var(--white-color);
 }
 .overlay {
     position: fixed;
@@ -76,6 +77,11 @@ html::-webkit-scrollbar-thumb {
 }
 .bold {
     font-weight: var(--font-weight-bold);
+}
+.sharp {
+    color: var(--dark-green);
+    font-weight: var(--font-weight-bold);
+    margin-right: 10px;
 }
 /* INPUT FORM */
 .input-form {
@@ -119,8 +125,4 @@ html::-webkit-scrollbar-thumb {
     border: 4px solid var(--dark-green);
     color: var(--white-color);
 }
-.sharp {
-    color: var(--dark-green);
-    font-weight: var(--font-weight-bold);
-    margin-right: 10px;
-}
+

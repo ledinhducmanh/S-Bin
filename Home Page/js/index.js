@@ -43,3 +43,5 @@ var updateTitle = () => {
 }
 
 setInterval(updateTitle, 5000);
+
+// QR SCANNER HANDLE

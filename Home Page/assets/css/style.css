@@ -415,6 +415,35 @@ body {
     cursor: pointer;
     margin-top: 15px;
 }
+/* QR SCANNER */
+.qr-scanner__heading {
+    color: var(--dark-green);
+}
+#qr-reader {
+    background-color: var(--white-color);
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 55px 0;
+}
+#qr-scaner span {
+    color: var(--dark-green);
+}
+#qr-scaner button, #qr-reader select {
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    border: 4px solid var(--dark-green);
+    color: var(--super-dark-green);
+    font-size: 15px;
+    font-weight: var(--font-weight-bold);
+    margin: 24px 0;
+    cursor: pointer;
+    outline: none;
+}
+#qr-scaner video {
+    width: 100%;
+}
 /* Footer */
 #footer {
     border-top: 1px solid var(--light-grey);
