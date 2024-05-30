@@ -44,4 +44,10 @@ var updateTitle = () => {
 
 setInterval(updateTitle, 5000);
 
-// QR SCANNER HANDLE
+// Handle preload
+const preLoadingPage = document.getElementById('preload')
+window.addEventListener('load', () => {
+    preLoadingPage.style.opacity = 0;
+    preLoadingPage.style.visibility = 'hidden';
+});
+

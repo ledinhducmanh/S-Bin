@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="./assets/css/grid.min.css">
     <!-- Font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/background/logo.png" type="image/x-icon">
 </head>
 <body>
     <!-- Header -->
+    <div id="preload"></div>
     <header id="header">
         <div class="grid wide">
             <div class="header flex-center">
@@ -25,7 +26,7 @@
                     <ul class="navbar__list flex-center">
                         <li class="navbar__item"><a class="navbar__link" href="#redeem-gifts">My Offer</a></li>
                         <li class="navbar__item"><a class="navbar__link" href="#top-ranking">Top Ranking</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#">Event</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="#event">Event</a></li>
                         <li class="navbar__item"><a class="navbar__link" href="#qr-scanner">QR Scanner</a></li>
                     </ul>
                 </nav>
@@ -72,7 +73,7 @@
                     <ul>
                         <li><a href="#redeem-gifts">My Offer</a></li>
                         <li><a href="#top-ranking">Top Ranking</a></li>
-                        <li><a href="#">Event</a></li>
+                        <li><a href="#event">Event</a></li>
                         <li><a href="#qr-scanner">QR Scanner</a></li>
                     </ul>
                 </div>
@@ -349,15 +350,23 @@
                 </div>
             </div>
         </div>
+        <div id="event">
+            <div class="grid wide">
+                <h1 class="heading-section event__heading"><i class="fa-solid fa-fire"></i> EVENT</h1>
+                <div class="event">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D122102156474338017%26id%3D61560140527516%26substory_index%3D981311193579819&show_text=true&width=500&is_preview=true" width="500" height="621" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+        </div>
         <div id="qr-scanner">
             <div class="grid wide">
                 <h1 class="heading-section qr-scanner__heading"><i class="fa-solid fa-qrcode"></i> QR SCANNER</h1>
-                <p class="hide-on-tablet-mobile paragraph bold"><span class="sharp">#Tips:</span>Kindly minimize the screen size to facilitate scanning the code if you are utilizing a laptop or a device with a large display.</p>
+                <p class="hide-on-tablet-mobile paragraph bold"><span class="sharp" style="color: var(--dark-blue);">#Tips:</span>Kindly minimize the screen size to facilitate scanning the code if you are utilizing a laptop or a device with a large display.</p>
                 <div class="hide-on-pc">
-                    <div id="qr-reader"></div>
-                    <div id="qr-reader-results"></div>
-                </div>
+                <div id="qr-reader"></div>
+                <div id="qr-reader-results"></div>
             </div>
+        </div>
         <script>
             
         </script>
@@ -423,7 +432,6 @@
     var html5QrcodeScanner = new Html5QrcodeScanner(
         "qr-reader", { fps: 10, qrbox: 250 });
     html5QrcodeScanner.render(onScanSuccess);
-    
     </script>
 </body>
 </html>
