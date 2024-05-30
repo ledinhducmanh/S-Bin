@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to S-Bin</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="preload"></div>
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form action method="POST" class="form" id="form-1">
+                <h1 class="form-heading">Sign In</h1>
+                <div class="form-logIn-with">
+                    <button class="form-logIn-google">
+                        <a href="#">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </button>
+                    <button class="form-logIn-facebook">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </button>
+                </div>
+                <p class="form-text">or use your email password</p>
+                <div class="form-group invalid">
+                    <input class="email" name="email" type="text" placeholder="Email" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group invalid">
+                    <input class="password" name="password" type="password" placeholder="Password" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <p class="form-text">Forget Your Password?</p>
+                <button class="submit-btn" type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="form-container sign-up">
+            <form action method="POST" class="form" id="form-2">
+                <h1 class="form-heading">Sign Up</h1>
+                <div class="form-logIn-with">
+                    <button class="form-logIn-google">
+                        <a href="#">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </button>
+                    <button class="form-logIn-facebook">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </button>
+                </div>
+                <p class="form-text">or use your email password</p>
+                <div class="form-group invalid">
+                    <input class="fullname" name="fullname" type="text" placeholder="Enter your name" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group invalid">
+                    <input class="email" name="email" type="text" placeholder="Email" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group invalid">
+                    <input class="password" name="password" type="password" placeholder="Password" class="form-control">
+                    <span class="form-message"></span>
+                  </div>
+                <p class="form-text">Forget Your Password?</p>
+                <button class="submit-btn" type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <img src="../assets/img/logo.png">
+                    <h1>Welcome to our website!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <img src="../assets/img/logo.png">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
