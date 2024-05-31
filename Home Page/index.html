@@ -14,8 +14,8 @@
     <link rel="shortcut icon" href="./assets/img/background/logo.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Header -->
     <div id="preload"></div>
+    <!-- Header -->
     <header id="header">
         <div class="grid wide">
             <div class="header flex-center">
@@ -89,6 +89,13 @@
                 <h1 class="heading-section redeem-gifts__heading"><i class="fa-solid fa-ticket"></i> REDEEM GIFTS</h1>
                 <div class="redeem-gifts row">
                     <div class="col l-3 m-0 c-0">
+                        <div class="my-voucher js-MyVoucher">
+                            <div class="flex-center">
+                                <h3 class="my-voucher__heading">My voucher</h3>
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <p>You don't have any voucher</p>
+                        </div>
                         <div class="category">
                             <h3 class="category__heading">Category</h3>
                             <ul class="category__list">
@@ -131,6 +138,13 @@
                         <div class="filter flex-center">
                             <input id="filter__search" class="input-form" type="text" placeholder="Search items by keyword, price, etc">
                             <i class="search-btn fa-solid fa-search" onclick="filterSearch()"></i>
+                        </div>
+                        <div class="my-voucher hide-on-pc js-MyVoucher" style="margin: 0; margin-top: 30px;">
+                            <div class="flex-center">
+                                <h3 class="my-voucher__heading">My voucher</h3>
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <p>You don't have any voucher</p>
                         </div>
                         <div class="row">
                             <div class="col l-4 m-4 c-6">
@@ -367,9 +381,6 @@
                 <div id="qr-reader-results"></div>
             </div>
         </div>
-        <script>
-            
-        </script>
     </main>
     <!-- Footer -->
     <footer id="footer">
@@ -394,8 +405,76 @@
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
+            <div id="google_translate_element"></div>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal js-ModalMyVoucher">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!--  My voucher -->
+            <div class="my-voucher--modal">
+                <div class="flex-center" style="justify-content: space-between; padding-bottom: 10px;">
+                    <div class="flex-center">
+                        <h1>My voucher</h1>
+                        <i style="font-size: 30px; color: var(--red-color); margin-left: 10px;" class="fa-solid fa-gift"></i>
+                    </div>
+                    <i class="js-CloseModalMyVoucher my-voucher--close fa-solid fa-xmark"></i>
+                </div>
+                <div class="row my-voucher--list">
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-blue.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">CGV Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-orange.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">Lazada Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-yellow.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">Highlands Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-light-blue.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">Pizza Hut Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-blue.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">CGV Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div> 
+    </div>
+
      <!--JS FILE  -->
     <script src="./js/index.js"></script>
     
@@ -405,6 +484,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- QR Scanner -->
     <script src="https://unpkg.com/html5-qrcode"></script>
+    <!-- Google Translate -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <script>
     // Smooth Scrolling
     $(document).ready(function(){
@@ -432,6 +514,10 @@
     var html5QrcodeScanner = new Html5QrcodeScanner(
         "qr-reader", { fps: 10, qrbox: 250 });
     html5QrcodeScanner.render(onScanSuccess);
+    // Google Translate 
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
     </script>
 </body>
 </html>

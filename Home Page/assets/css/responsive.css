@@ -35,14 +35,21 @@
     .top-ranking__total-coin {
         font-size: 15px;
     }
-    
+    .voucher__img {
+        height: 100px;
+    }
+    .voucher__item {
+        padding: 25px 15px;
+    }
+    .voucher__value {
+        top: 7px;
+    }
 }
 /* Tablet */ 
 @media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-tablet {
         display: none;
     }
-    
     
 }
 /* Mobile */
@@ -83,8 +90,5 @@
     }
     .paragraph, .bullet {
         text-align: left !important;
-    }
-    .news-feed {
-        padding: 20px;
     }
 }

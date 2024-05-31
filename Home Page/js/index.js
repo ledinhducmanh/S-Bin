@@ -51,3 +51,22 @@ window.addEventListener('load', () => {
     preLoadingPage.style.visibility = 'hidden';
 });
 
+// Handle my voucher
+
+const myVoucherBtnList = document.querySelectorAll('.js-MyVoucher')
+const myVoucherModal = document.querySelector('.js-ModalMyVoucher')
+const myVoucherCloseBtnList = document.querySelectorAll('.js-CloseModalMyVoucher')
+
+myVoucherBtnList.forEach(btn => {
+    btn.addEventListener('click', () => {
+        myVoucherModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+myVoucherCloseBtnList.forEach(btn => {
+    btn.addEventListener('click', () => {
+        myVoucherModal.classList.remove('open');
+        document.body.style.overflow = 'auto';
+    });
+});
