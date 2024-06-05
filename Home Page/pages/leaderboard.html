@@ -1,0 +1,292 @@
+<!-- LEADERBOARD -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Bin Home Page</title>
+    <!-- Css Link File -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.min.css">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/background/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="preload"></div>
+    <!-- Header -->
+    <header id="header">
+        <div class="grid wide">
+            <div class="header flex-center">
+                <div class="logo flex-center">
+                    <a href="/"><img src="../assets/img/logo.png" ></a><a href="/">S-Bin</a>
+                </div>
+                <nav class="navbar hide-on-tablet-mobile">
+                    <ul class="navbar__list flex-center">
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/shop.html">Shop</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/support.html">Support</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info flex-center">
+                    <div class="navbar__coin-reward flex-center">
+                        <div class="navbar__coin-reward__icon flex-center">
+                            <span>2500</span>
+                            <img class="coin" src="../assets/img/coin.png">
+                        </div>
+                        <div class="navbar__coin-reward__total">
+                            <span>5000 RCL</span>
+                        </div>
+                    </div>
+                    <div class="user__profile">
+                        <div class="user__img flex-center">
+                            <img src="../assets/img/My.jpg">
+                            <p class="user__name hide-on-mobile">Le Manh</p>
+                            <i class="user__icon fa-solid fa-angle-down hide-on-mobile"></i>
+                        </div>
+                        <div class="user__show-more">
+                            <ul class="user__show-more__list">
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/settings.html"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/notification.html"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../login/"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="menu-mobile__btn hide-on-pc" for="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input class="menu-input" type="checkbox" hidden id="menu-mobile">
+                <label for="menu-mobile" class="overlay"></label>
+                <div class="menu-mobile">
+                    <ul>
+                        <li><a href="../pages/shop.html">Shop</a></li>
+                        <li><a href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li><a href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li><a href="../pages/support.html">Support</a></li>
+                        <li><a href="../pages/qr-scanner.html">QR Scanner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main id="main">
+        <div id="leaderboard">
+            <div class="grid wide">
+                <h3 class="heading__h3">Top coin earners rank!</h3>
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <h1 class="heading-section"><i class="fa-solid fa-trophy"></i> LEADERBOARD</h1>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="leaderboard_tabs">
+                            <ul class="tabs flex-center" id="myTab" role="tablist">
+                                <li class="tabs-item active">
+                                    <a href="#alltime" class="tabs-link">All Time</a>
+                                </li>
+                                <li class="tabs-item">
+                                    <a href="#week" class="tabs-link">Week</a>
+                                </li>
+                                <li class="tabs-item">
+                                    <a href="#month" class="tabs-link">Month</a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="leaderboard_top_rank">
+                            <div class="flex-center top_ranking__item top-1">
+                                <div class="ranking_icon">
+                                    <img src="../assets/img/rank/crown.svg">
+                                </div>
+                                <img class="ranking_user" src="../assets/img/My.jpg"></img>
+                                <div class="ranking__details">
+                                    <h6>First 1</h6>
+                                    <h5>Sài Gòn Hôm Nay Mưa</h5>
+                                    <p>19.280G</p>
+                                </div>
+                                <div class="prize flex-center">
+                                    <h4>9.800</h4>
+                                    <div class="prize_gem">
+                                        <p>Prize</p>
+                                        <img class="coin" src="../assets/img/coin.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-center top_ranking__item top-2">
+                                <div class="ranking_icon">
+                                    <img src="../assets/img/rank/cup.svg">
+                                </div>
+                                <img class="ranking_user" src="../assets/img/My.jpg"></img>
+                                <div class="ranking__details">
+                                    <h6>Second 2</h6>
+                                    <h5>Hà Nội</h5>
+                                    <p>19.280G</p>
+                                </div>
+                                <div class="prize flex-center">
+                                    <h4>9.800</h4>
+                                    <div class="prize_gem">
+                                        <p>Prize</p>
+                                        <img class="coin" src="../assets/img/coin.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-center top_ranking__item top-3">
+                                <div class="ranking_icon">
+                                    <img src="../assets/img/rank/medal.svg">
+                                </div>
+                                <img class="ranking_user" src="../assets/img/My.jpg"></img>
+                                <div class="ranking__details">
+                                    <h6>Third 3</h6>
+                                    <h5>Bánh mì bánh mì bánh mì bánh mì bánh mì</h5>
+                                    <p>19.280G</p>
+                                </div>
+                                <div class="prize flex-center">
+                                    <h4>9.800</h4>
+                                    <div class="prize_gem">
+                                        <p>Prize</p>
+                                        <img class="coin" src="../assets/img/coin.png">
+                                    </div>
+                                </div>
+                            </div>         
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="leaderboard_top_list">
+                            <ul class="top_list__list">
+                                <li class="top_list__list--header flex-center"> 
+                                    <p class="top_list__place">Place</p>
+                                    <p class="top_list__user-name">User</p>
+                                    <p class="top_list__num-coin">RCL</p>
+                                </li>
+                                <li class="top_list__item flex-center">
+                                    <p class="top_list__item--place">04</p>
+                                    <div class="top_list__item--user-name flex-center">
+                                        <span style="background-image: url('/assets/img/My.jpg');" class="circle"></span>
+                                        <span>Yeremias NJ</span>
+                                    </div>
+                                    <div class="top_list__item--num-coin flex-center">
+                                        <p>4800</p>
+                                        <img class="coin" src="/assets/img/coin.png">
+                                    </div>
+                                </li>
+                                <li class="top_list__item flex-center">
+                                    <p class="top_list__item--place">05</p>
+                                    <div class="top_list__item--user-name flex-center">
+                                        <span style="background-color: #4682b4;" class="circle"></span>
+                                        <span>John Pentol</span>
+                                    </div>
+                                    <div class="top_list__item--num-coin flex-center">
+                                        <p>4500</p>
+                                        <img class="coin" src="/assets/img/coin.png">
+                                    </div>
+                                </li>
+                                <li class="top_list__item flex-center">
+                                    <p class="top_list__item--place">06</p>
+                                    <div class="top_list__item--user-name flex-center">
+                                        <span style="background-color: #32cd32;" class="circle"></span>
+                                        <span>Magda Hera</span>
+                                    </div>
+                                    <div class="top_list__item--num-coin flex-center">
+                                        <p>4000</p>
+                                        <img class="coin" src="/assets/img/coin.png">
+                                    </div>
+                                </li>
+                                <li class="top_list__item flex-center">
+                                    <p class="top_list__item--place">07</p>
+                                    <div class="top_list__item--user-name flex-center">
+                                        <span style="background-color: #ff69b4;" class="circle"></span>
+                                        <span>Danielad Dan</span>
+                                    </div>
+                                    <div class="top_list__item--num-coin flex-center">
+                                        <p>3800</p>
+                                        <img class="coin" src="/assets/img/coin.png">
+                                    </div>
+                                </li>
+                                <li class="top_list__item flex-center">
+                                    <p class="top_list__item--place">08</p>
+                                    <div class="top_list__item--user-name flex-center">
+                                        <span style="background-color: #ffa500;" class="circle"></span>
+                                        <span>Henry</span>
+                                    </div>
+                                    <div class="top_list__item--num-coin flex-center">
+                                        <p>3500</p>
+                                        <img class="coin" src="/assets/img/coin.png">
+                                    </div>
+                                </li>
+                                <li class="top_list__item flex-center">
+                                    <p class="top_list__item--place">09</p>
+                                    <div class="top_list__item--user-name flex-center">
+                                        <span style="background-color: #6a5acd;" class="circle"></span>
+                                        <span>Thomas C</span>
+                                    </div>
+                                    <div class="top_list__item--num-coin flex-center">
+                                        <p>2500</p>
+                                        <img class="coin" src="/assets/img/coin.png">
+                                    </div>
+                                </li>
+                                <li class="top_list__item flex-center">
+                                    <p class="top_list__item--place">10</p>
+                                    <div class="top_list__item--user-name flex-center">
+                                        <span style="background-color: #dc143c;" class="circle"></span>
+                                        <span>Paijoo</span>
+                                    </div>
+                                    <div class="top_list__item--num-coin flex-center">
+                                        <p>1500</p>
+                                        <img class="coin" src="/assets/img/coin.png">
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="top_list__more" href="#">Load more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="grid wide">
+            <div class="footer__privacy flex-center">
+                <div class="logo">
+                    <a href="/"><img src="../assets/img/logo.png" ></a>
+                </div>
+                <div class="footer__privacy--list flex-center">
+                    <span class="footer__privacy--item"><a href="./about.html">About</a></span>
+                    <span class="footer__privacy--item"><a href="./privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="./term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="./privacy-policy.html">Bug Bounty</a></span>
+                </div>
+            </div>
+            <div class="footer__social flex-center">
+                <div class="footer__copyright">
+                    Copyright © 2024 S-Bin. All Rights Reserved.
+                </div>
+                <div class="footer__social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+     <!--JS FILE  -->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

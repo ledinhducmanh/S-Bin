@@ -1,3 +1,4 @@
+<!-- LEADERBOARD -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S-Bin Home Page</title>
     <!-- Css Link File -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/grid.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.min.css">
     <!-- Font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./assets/img/background/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/background/logo.png" type="image/x-icon">
 </head>
 <body>
     <div id="preload"></div>
@@ -20,21 +21,21 @@
         <div class="grid wide">
             <div class="header flex-center">
                 <div class="logo flex-center">
-                    <a href="/"><img src="./assets/img/logo.png" ></a><a href="/">S-Bin</a>
+                    <a href="/"><img src="../assets/img/logo.png" ></a><a href="/">S-Bin</a>
                 </div>
                 <nav class="navbar hide-on-tablet-mobile">
                     <ul class="navbar__list flex-center">
-                        <li class="navbar__item"><a class="navbar__link" href="#redeem-gifts">My Offer</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#top-ranking">Top Ranking</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#event">Event</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#qr-scanner">QR Scanner</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/shop.html">Shop</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/support.html">Support</a></li>
                     </ul>
                 </nav>
                 <div class="user-info flex-center">
                     <div class="navbar__coin-reward flex-center">
                         <div class="navbar__coin-reward__icon flex-center">
                             <span>2500</span>
-                            <img class="coin" src="./assets/img/coin.png">
+                            <img class="coin" src="../assets/img/coin.png">
                         </div>
                         <div class="navbar__coin-reward__total">
                             <span>5000 RCL</span>
@@ -42,23 +43,26 @@
                     </div>
                     <div class="user__profile">
                         <div class="user__img flex-center">
-                            <img src="./assets/img/My.jpg">
+                            <img src="../assets/img/My.jpg">
                             <p class="user__name hide-on-mobile">Le Manh</p>
                             <i class="user__icon fa-solid fa-angle-down hide-on-mobile"></i>
                         </div>
                         <div class="user__show-more">
                             <ul class="user__show-more__list">
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="./options/settings.html"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                    <a class="flex-center" href="../options/profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="./options/notification.html"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                    <a class="flex-center" href="../options/settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="./options/history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                    <a class="flex-center" href="../options/notification.html"><i class="fa-regular fa-message"></i><span>Notification</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="./login/"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                    <a class="flex-center" href="../options/history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../login/"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -71,10 +75,11 @@
                 <label for="menu-mobile" class="overlay"></label>
                 <div class="menu-mobile">
                     <ul>
-                        <li><a href="#redeem-gifts">My Offer</a></li>
-                        <li><a href="#top-ranking">Top Ranking</a></li>
-                        <li><a href="#event">Event</a></li>
-                        <li><a href="#qr-scanner">QR Scanner</a></li>
+                        <li><a href="../pages/shop.html">Shop</a></li>
+                        <li><a href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li><a href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li><a href="../pages/support.html">Support</a></li>
+                        <li><a href="../pages/qr-scanner.html">QR Scanner</a></li>
                     </ul>
                 </div>
             </div>
@@ -82,303 +87,197 @@
     </header>
     <!-- Main content -->
     <main id="main">
-        <div id="redeem-gifts">
+        <div id="dashboard">
             <div class="grid wide">
-                <h3 class="heading__h3">Welcome Back!</h3>
-                <h1 class="heading__h1">Le Manh 🗿</h1>
-                <h1 class="heading-section redeem-gifts__heading"><i class="fa-solid fa-ticket"></i> REDEEM GIFTS</h1>
-                <div class="redeem-gifts row">
-                    <div class="col l-3 m-0 c-0">
-                        <div class="my-voucher js-MyVoucher">
-                            <div class="flex-center">
-                                <h3 class="my-voucher__heading">My voucher</h3>
-                                <i class="fa-solid fa-gift"></i>
+                <h3 class="heading__h3">Welcome back!</h3>
+                <h1 class="heading-section">Lê Mạnh 🐸</h1>
+                <div class="earning_heading flex-center">
+                    <div class="earning_heading--img">
+                        <img src="./assets/img/rank/bar_chart.svg">
+                    </div>
+                    <h2 class="heading__h3">Earn Possibilities</h2>                  
+                </div>
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/cgv.png">
+                                <a class="btn" href="#">Enter</a>
                             </div>
-                            <p>You don't have any voucher</p>
                         </div>
-                        <div class="category">
-                            <h3 class="category__heading">Category</h3>
-                            <ul class="category__list">
-                                <li class="category__item flex-center">
-                                    <input onchange="filterSearch('CGV Voucher')" class="category__checker" type="radio" name="voucher">
-                                    <div class="category__describe flex-center">
-                                        <img class="category__brand" src="./assets/img/brand/cgv.png">
-                                        <p class="category__name">CGV Voucher</p>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/highlands.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/lazada.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/pizza-hut.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/k-pub.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/k-pub.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/lazada.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/pizza-hut.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/highlands.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <div class="brand-product">
+                            <div class="brand-product__img">
+                                <img src="./assets/img/brand/cgv.png">
+                                <a class="btn" href="#">Enter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="bonus-code active">
+                            <div class="bonus-code__icon">
+                                <img src="./assets/img/rank/star.svg">
+                            </div>
+                            <div class="bonus-code__content flex-center">
+                                <div class="bonus-code__describe">
+                                    <h4>Bonus code</h4>
+                                    <p>On behalf of our organization, we acknowledge and greatly appreciate your positive contributions to our project.</p>
+                                </div>
+                                <button class="bonus-code__btn">
+                                    Claim
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bonus-code">
+                            <div class="bonus-code__icon">
+                                <img src="./assets/img/rank/badge.svg">
+                            </div>
+                            <div class="bonus-code__content flex-center">
+                                <div class="bonus-code__describe">
+                                    <h4>Bonus code</h4>
+                                    <p>On behalf of our organization, we acknowledge and greatly appreciate your positive contributions to our project.</p>
+                                </div>
+                                <button class="bonus-code__btn">
+                                    Done
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="coin-task">
+                            <h2 class="heading__h3">Receive Free Coin Tasks</h2>
+                            <ul class="coin-task__list">
+                                <li class="coin-task__item flex-center">
+                                    <div class="flex-center">
+                                        <div class="coin-task__icon flex-center">
+                                            <a href="#">
+                                                <img src="./assets/img/social/twitter.svg">
+                                            </a>
+                                        </div>
+                                        <div class="coin-task__decribe">
+                                            <h4 class="heading__h3">Follow us</h4>
+                                            <p>On Twitter <span>@S-Bin</span></p>
+                                        </div>
                                     </div>
-                                    <p class="category__quantity">(2)</p>
+                                    <div class="coin-task__coin flex-center">
+                                        <h3 class="heading__h3">Earn 30</h3>
+                                        <img class="coin" src="./assets/img/coin.png">
+                                    </div>
+                                    <button class="bonus-code__btn">
+                                        Done
+                                    </button>
                                 </li>
-                                <li class="category__item flex-center">
-                                    <input onchange="filterSearch('Lazada Voucher')" class="category__checker" type="radio" name="voucher">
-                                    <div class="category__describe flex-center">
-                                        <img class="category__brand" src="./assets/img/brand/lazada.png">
-                                        <p class="category__name">Lazada Voucher</p>
+                                <li class="coin-task__item flex-center active">
+                                    <div class="flex-center">
+                                        <div class="coin-task__icon flex-center">
+                                            <a href="#">
+                                                <img src="./assets/img/social/instagram.svg">
+                                            </a>
+                                        </div>
+                                        <div class="coin-task__decribe">
+                                            <h4 class="heading__h3">Follow us</h4>
+                                            <p>On Instagram <span>@S-Bin</span></p>
+                                        </div>
                                     </div>
-                                    <p class="category__quantity">(1)</p>
+                                    <div class="coin-task__coin flex-center">
+                                        <h3 class="heading__h3">Earn 25</h3>
+                                        <img class="coin" src="./assets/img/coin.png">
+                                    </div>
+                                    <button class="bonus-code__btn">
+                                        Claim
+                                    </button>
                                 </li>
-                                <li class="category__item flex-center">
-                                    <input onchange="filterSearch('Highlands Voucher')"  class="category__checker" type="radio" name="voucher">
-                                    <div class="category__describe flex-center">
-                                        <img class="category__brand" src="./assets/img/brand/highlands.png">
-                                        <p class="category__name">Highlands Voucher</p>
+                                <li class="coin-task__item flex-center active">
+                                    <div class="flex-center">
+                                        <div class="coin-task__icon flex-center">
+                                            <a href="#">
+                                                <img src="./assets/img/social/facebook.svg">
+                                            </a>
+                                        </div>
+                                        <div class="coin-task__decribe">
+                                            <h4 class="heading__h3">Follow us</h4>
+                                            <p>On Facebook <span>@S-Bin</span></p>
+                                        </div>
                                     </div>
-                                    <p class="category__quantity">(1)</p>
-                                </li>
-                                <li class="category__item flex-center">
-                                    <input onchange="filterSearch('Pizza Hut Voucher')" class="category__checker" type="radio" name="voucher">
-                                    <div class="category__describe flex-center">
-                                        <img class="category__brand" src="./assets/img/brand/pizza-hut.png">
-                                        <p class="category__name">Pizza Hut Voucher</p>
+                                    <div class="coin-task__coin flex-center">
+                                        <h3 class="heading__h3">Earn 20</h3>
+                                        <img class="coin" src="./assets/img/coin.png">
                                     </div>
-                                    <p class="category__quantity">(1)</p>
+                                    <button class="bonus-code__btn">
+                                        Claim
+                                    </button>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-9 m-12 c-12">
-                        <div class="filter flex-center">
-                            <input id="filter__search" class="input-form" type="text" placeholder="Search items by keyword, price, etc">
-                            <i class="search-btn fa-solid fa-search" onclick="filterSearch()"></i>
-                        </div>
-                        <div class="my-voucher hide-on-pc js-MyVoucher" style="margin: 0; margin-top: 30px;">
-                            <div class="flex-center">
-                                <h3 class="my-voucher__heading">My voucher</h3>
-                                <i class="fa-solid fa-gift"></i>
-                            </div>
-                            <p>You don't have any voucher</p>
-                        </div>
-                        <div class="row">
-                            <div class="col l-4 m-4 c-6">
-                                <div class="voucher__item">
-                                    <div class="voucher__value flex-center">
-                                        <span>500</span>
-                                        <img class="coin" src="./assets/img/coin.png">
-                                    </div>
-                                    <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-blue.png');"></div>
-                                    <div class="voucher__describe">
-                                        <p class="voucher__name">CGV Voucher</p>
-                                        <p class="voucher__date">Out of date: 20/10/2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col l-4 m-4 c-6">
-                                <div class="voucher__item">
-                                    <div class="voucher__value flex-center">
-                                        <span class="voucher__price">100</span>
-                                        <img class="coin" src="./assets/img/coin.png">
-                                    </div>
-                                    <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-orange.png');"></div>
-                                    <div class="voucher__describe">
-                                        <p class="voucher__name">Lazada Voucher</p>
-                                        <p class="voucher__date">Out of date: 20/10/2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col l-4 m-4 c-6">
-                                <div class="voucher__item">
-                                    <div class="voucher__value flex-center">
-                                        <span class="voucher__price">600</span>
-                                        <img class="coin" src="./assets/img/coin.png">
-                                    </div>
-                                    <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-yellow.png');"></div>
-                                    <div class="voucher__describe">
-                                        <p class="voucher__name">Highlands Voucher</p>
-                                        <p class="voucher__date">Out of date: 20/10/2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col l-4 m-4 c-6">
-                                <div class="voucher__item">
-                                    <div class="voucher__value flex-center">
-                                        <span class="voucher__price">300</span>
-                                        <img class="coin" src="./assets/img/coin.png">
-                                    </div>
-                                    <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-light-blue.png');"></div>
-                                    <div class="voucher__describe">
-                                        <p class="voucher__name">Pizza Hut Voucher</p>
-                                        <p class="voucher__date">Out of date: 20/10/2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col l-4 m-4 c-6">
-                                <div class="voucher__item">
-                                    <div class="voucher__value flex-center">
-                                        <span class="voucher__price">500</span>
-                                        <img class="coin" src="./assets/img/coin.png">
-                                    </div>
-                                    <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-blue.png');"></div>
-                                    <div class="voucher__describe">
-                                        <p class="voucher__name">CGV Voucher</p>
-                                        <p class="voucher__date">Out of date: 20/10/2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="top-ranking">
-            <div class="grid wide">
-                <h1 class="heading-section top-ranking__heading"><i class="fa-solid fa-trophy"></i> TOP RANKING</h1>
-                <div class="row">
-                    <div class="col l-6 m-6 c-12">
-                        <div class="top-ranking__list">
-                            <div class="top-ranking__item flex-center">
-                                <img class="top-ranking__img" src="./assets/img/rank/top1.png">
-                                <div class="top-ranking__describe flex-center">
-                                    <img class="top-ranking__user hide-on-tablet-mobile" src="./assets/img/My.jpg">
-                                    <div class="top-ranking__description">
-                                        <p class="rank-top rank-top-1"><i class="fa-solid fa-crown"></i> First</p>
-                                        <h5 class="rank-user-name">Khong Phai Le Dinh Duc Manh</h5>
-                                    </div>
-                                </div>
-                                <div class="top-ranking__total-coin flex-center">
-                                    <h4>5.000</h4>
-                                    <img class="coin" src="./assets/img/coin.png">
-                                </div>
-                            </div>
-                            <div class="top-ranking__item flex-center">
-                                <img class="top-ranking__img" src="./assets/img/rank/top2.png">
-                                <div class="top-ranking__describe flex-center">
-                                    <img class="top-ranking__user hide-on-tablet-mobile" src="./assets/img/My.jpg">
-                                    <div class="top-ranking__description">
-                                        <p class="rank-top rank-top-2"><i class="fa-solid fa-crown"></i> Second</p>
-                                        <h5 class="rank-user-name">Siuwe</h5>
-                                    </div>
-                                </div>
-                                <div class="top-ranking__total-coin flex-center">
-                                    <h4>5.000</h4>
-                                    <img class="coin" src="./assets/img/coin.png">
-                                </div>
-                            </div>
-                            <div class="top-ranking__item flex-center">
-                                <img class="top-ranking__img" src="./assets/img/rank/top3.png">
-                                <div class="top-ranking__describe flex-center">
-                                    <img class="top-ranking__user hide-on-tablet-mobile" src="./assets/img/My.jpg">
-                                    <div class="top-ranking__description">
-                                        <p class="rank-top rank-top-3"><i class="fa-solid fa-crown"></i> Third</p>
-                                        <h5 class="rank-user-name">Optimum prime</h5>
-                                    </div>
-                                </div>
-                                <div class="top-ranking__total-coin flex-center">
-                                    <h4>5.000</h4>
-                                    <img class="coin" src="./assets/img/coin.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l-6 m-6 c-12">
-                        <div class="ranking-table">
-                            <div class="ranking-table__tab">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Place</th>
-                                                <th>User</th>
-                                                <th>RCL</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">04</th>
-                                                <td class="user_circle flex-center">
-                                                    <span style="background-image: url('/assets/img/My.jpg');" class="circle"></span>
-                                                    <span>Yeremias NJ</span>
-                                                </td>
-                                                <td>4800
-                                                    <img class="table__coin coin" src="/assets/img/coin.png">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">05</th>
-                                                <td class="user_circle flex-center">
-                                                    <span style="background-color: #4682b4;" class="circle"></span> 
-                                                    <span>John Pentol</span>
-                                                </td>
-                                                <td>4500
-                                                    <img class="table__coin coin" src="/assets/img/coin.png">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">06</th>
-                                                <td class="user_circle flex-center">
-                                                    <span style="background-color: #32cd32;" class="circle"></span> 
-                                                    <span>Magda Hera</span>
-                                                </td>
-                                                <td>4000
-                                                    <img class="table__coin coin" src="/assets/img/coin.png">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">07</th>
-                                                <td class="user_circle flex-center">
-                                                    <span style="background-color: #ff69b4;" class="circle"></span> 
-                                                    <span>Danielad Dan</span>
-                                                </td>
-                                                <td>3800
-                                                    <img class="table__coin coin" src="/assets/img/coin.png">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">08</th>
-                                                <td class="user_circle flex-center">
-                                                    <span style="background-color: #ffa500;" class="circle"></span> 
-                                                    <span>Henry</span>
-                                                </td>
-                                                <td>3500
-                                                    <img class="table__coin coin" src="/assets/img/coin.png">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">09</th>
-                                                <td class="user_circle flex-center">
-                                                    <span style="background-color: #6a5acd;" class="circle"></span> 
-                                                    <span>Thomas C</span>
-                                                </td>
-                                                <td>2500
-                                                    <img class="table__coin coin" src="/assets/img/coin.png">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">10</th>
-                                                <td class="user_circle flex-center">
-                                                    <span style="background-color: #dc143c;" class="circle"></span> 
-                                                    <span>Paijoo</span>
-                                                </td>
-                                                <td>1500
-                                                    <img class="table__coin coin" src="/assets/img/coin.png">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                </div>
-                                <div class="table__show-more">
-                                    ═══ Show more ═══
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="event">
-            <div class="grid wide">
-                <h1 class="heading-section event__heading"><i class="fa-solid fa-fire"></i> EVENT</h1>
-                <div class="event">
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D122102156474338017%26id%3D61560140527516%26substory_index%3D981311193579819&show_text=true&width=500&is_preview=true" width="500" height="621" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                </div>
-            </div>
-        </div>
-        <div id="qr-scanner">
-            <div class="grid wide">
-                <h1 class="heading-section qr-scanner__heading"><i class="fa-solid fa-qrcode"></i> QR SCANNER</h1>
-                <p class="hide-on-tablet-mobile paragraph bold"><span class="sharp" style="color: var(--dark-blue);">#Tips:</span>Kindly minimize the screen size to facilitate scanning the code if you are utilizing a laptop or a device with a large display.</p>
-                <div class="hide-on-pc">
-                <div id="qr-reader"></div>
-                <div id="qr-reader-results"></div>
             </div>
         </div>
     </main>
@@ -387,13 +286,13 @@
         <div class="grid wide">
             <div class="footer__privacy flex-center">
                 <div class="logo">
-                    <a href="/"><img src="./assets/img/logo.png" ></a>
+                    <a href="/"><img src="../assets/img/logo.png" ></a>
                 </div>
                 <div class="footer__privacy--list flex-center">
-                    <span class="footer__privacy--item"><a href="./sites/about.html">About</a></span>
-                    <span class="footer__privacy--item"><a href="./sites/privacy-policy.html">Privacy Policy</a></span>
-                    <span class="footer__privacy--item"><a href="./sites/term&service.html">Term & Service</a></span>
-                    <span class="footer__privacy--item"><a href="./sites/privacy-policy.html">Bug Bounty</a></span>
+                    <span class="footer__privacy--item"><a href="./pages/about.html">About</a></span>
+                    <span class="footer__privacy--item"><a href="./pages/privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="./pages/term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="./pages/privacy-policy.html">Bug Bounty</a></span>
                 </div>
             </div>
             <div class="footer__social flex-center">
@@ -405,119 +304,11 @@
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
-            <div id="google_translate_element"></div>
         </div>
     </footer>
-
-    <!-- MODAL -->
-    <div class="modal js-ModalMyVoucher">
-        <div class="modal__overlay"></div>
-        <div class="modal__body">
-            <!--  My voucher -->
-            <div class="my-voucher--modal">
-                <div class="flex-center" style="justify-content: space-between; padding-bottom: 10px;">
-                    <div class="flex-center">
-                        <h1>My voucher</h1>
-                        <i style="font-size: 30px; color: var(--red-color); margin-left: 10px;" class="fa-solid fa-gift"></i>
-                    </div>
-                    <i class="js-CloseModalMyVoucher my-voucher--close fa-solid fa-xmark"></i>
-                </div>
-                <div class="row my-voucher--list">
-                    <div class="col l-4 m-4 c-6">
-                        <div class="voucher__item">
-                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-blue.png');"></div>
-                            <div class="voucher__describe">
-                                <p class="voucher__name">CGV Voucher</p>
-                                <p class="voucher__date">Out of date: 20/10/2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l-4 m-4 c-6">
-                        <div class="voucher__item">
-                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-orange.png');"></div>
-                            <div class="voucher__describe">
-                                <p class="voucher__name">Lazada Voucher</p>
-                                <p class="voucher__date">Out of date: 20/10/2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l-4 m-4 c-6">
-                        <div class="voucher__item">
-                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-yellow.png');"></div>
-                            <div class="voucher__describe">
-                                <p class="voucher__name">Highlands Voucher</p>
-                                <p class="voucher__date">Out of date: 20/10/2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l-4 m-4 c-6">
-                        <div class="voucher__item">
-                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-light-blue.png');"></div>
-                            <div class="voucher__describe">
-                                <p class="voucher__name">Pizza Hut Voucher</p>
-                                <p class="voucher__date">Out of date: 20/10/2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l-4 m-4 c-6">
-                        <div class="voucher__item">
-                            <div class="voucher__img" style="background-image: url('./assets/img/coupons/coupons-blue.png');"></div>
-                            <div class="voucher__describe">
-                                <p class="voucher__name">CGV Voucher</p>
-                                <p class="voucher__date">Out of date: 20/10/2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </div> 
-    </div>
-
+    
      <!--JS FILE  -->
-    <script src="./js/index.js"></script>
-    
-    <!-- JS LIBRARY -->
+    <script src="../js/main.js"></script>
 
-    <!-- Smooth Scrolling -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- QR Scanner -->
-    <script src="https://unpkg.com/html5-qrcode"></script>
-    <!-- Google Translate -->
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-    <script>
-    // Smooth Scrolling
-    $(document).ready(function(){
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800, function(){
-            window.location.hash = hash;
-    });}});});
-    // QR Scanner
-    var resultContainer = document.getElementById('qr-reader-results');
-    var lastResult, countResults = 0;
-    function onScanSuccess(decodedText, decodedResult) {
-        if (decodedText !== lastResult) {
-            ++countResults;
-            lastResult = decodedText;
-            // Handle on success condition with the decoded message.
-            console.log(`Scan result ${decodedText}`, decodedResult);
-            resultContainer.innerHTML = `<a style="color: var(--dark-blue);" href="${decodedText}">Your QR Code is: ${decodedText}</a>`
-        }
-    }
-    var html5QrcodeScanner = new Html5QrcodeScanner(
-        "qr-reader", { fps: 10, qrbox: 250 });
-    html5QrcodeScanner.render(onScanSuccess);
-    // Google Translate 
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    </script>
 </body>
 </html>

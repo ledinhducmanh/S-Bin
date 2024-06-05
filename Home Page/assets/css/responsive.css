@@ -5,12 +5,18 @@
 }
 /* PC low resolution */ 
 @media (min-width: 1024px) and (max-width: 1239px) {
-    .rank-user-name {
-        max-width: 150px;
+    .ranking__details h5 {
+        max-width: 130px;
     }
-    .top-ranking__img {
-        height: 60px;
+    .ranking_icon {
+        margin-right: 30px;
     }
+    .ranking_icon::after {
+        right: -24%;
+    }
+    /* .ranking__details {
+        margin-left: 15px;
+    } */
 
 }
 /* Mobile & Tablet */
@@ -21,20 +27,7 @@
     .voucher__name {
         font-size: 16px;
     }
-    .top-ranking__img {
-        height: 50px;
-        margin-right: 15px;
-    }
-    .top-ranking__describe {
-        padding-left: 20px;
-    }
-    .rank-user-name {
-        max-width: 120px;
-        font-size: 18px;
-    }
-    .top-ranking__total-coin {
-        font-size: 15px;
-    }
+    
     .voucher__img {
         height: 100px;
     }
@@ -73,11 +66,8 @@
     .user__show-more__item a {
         font-size: 12px;
     }
-    .table__coin, .history-table .coin  {
+    .history-table .coin  { 
         display: none;
-    }
-    .footer__social-media a {
-        margin: 0;
     }
     .footer__privacy .logo img {
         height: 25px;
@@ -90,5 +80,40 @@
     }
     .paragraph, .bullet {
         text-align: left !important;
+    }
+    /* Leaderboard */
+    .top_ranking__item {
+        padding: 15px;
+
+    }
+    .ranking_icon {
+        margin: 0 5px;
+        height: 60px;
+        width: 60px;
+    }
+    .ranking_icon img {
+        height: 35px;
+        width: 35px;
+    }
+    .ranking__details h6 {
+        font-size: 12px;
+    }
+    .prize h4 {
+        font-size: 16px;
+    }
+    .ranking_user {
+        display: none;
+    }
+    .ranking_icon::after {
+        right: -20%;
+    }
+    .top_list__list--header {
+        font-size: 20px;
+    }
+    .top_ranking__item:nth-child(even) {
+        transform: translateY(0);
+    }
+    .top_list__list {
+        padding: 0px 15px;
     }
 }

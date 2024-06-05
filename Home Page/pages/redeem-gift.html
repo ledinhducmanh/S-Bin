@@ -1,0 +1,320 @@
+<!-- REEDEM GIFT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Bin Home Page</title>
+    <!-- Css Link File -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.min.css">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/background/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="preload"></div>
+    <!-- Header -->
+    <header id="header">
+        <div class="grid wide">
+            <div class="header flex-center">
+                <div class="logo flex-center">
+                    <a href="/"><img src="../assets/img/logo.png" ></a><a href="/">S-Bin</a>
+                </div>
+                <nav class="navbar hide-on-tablet-mobile">
+                    <ul class="navbar__list flex-center">
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/shop.html">Shop</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/support.html">Support</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info flex-center">
+                    <div class="navbar__coin-reward flex-center">
+                        <div class="navbar__coin-reward__icon flex-center">
+                            <span>2500</span>
+                            <img class="coin" src="../assets/img/coin.png">
+                        </div>
+                        <div class="navbar__coin-reward__total">
+                            <span>5000 RCL</span>
+                        </div>
+                    </div>
+                    <div class="user__profile">
+                        <div class="user__img flex-center">
+                            <img src="../assets/img/My.jpg">
+                            <p class="user__name hide-on-mobile">Le Manh</p>
+                            <i class="user__icon fa-solid fa-angle-down hide-on-mobile"></i>
+                        </div>
+                        <div class="user__show-more">
+                            <ul class="user__show-more__list">
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/settings.html"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/notification.html"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../login/"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="menu-mobile__btn hide-on-pc" for="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input class="menu-input" type="checkbox" hidden id="menu-mobile">
+                <label for="menu-mobile" class="overlay"></label>
+                <div class="menu-mobile">
+                    <ul>
+                        <li><a href="../pages/shop.html">Shop</a></li>
+                        <li><a href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li><a href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li><a href="../pages/support.html">Support</a></li>
+                        <li><a href="../pages/qr-scanner.html">QR Scanner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main id="main">
+        <div id="redeem-gifts">
+            <div class="grid wide">
+                <h3 class="heading__h3">Check out new voucher!</h3>
+                <h1 class="heading-section"><i class="fa-solid fa-ticket"></i> REDEEM GIFTS</h1>
+                <div class="redeem-gifts row">
+                    <div class="col l-3 m-0 c-0">
+                        <div class="my-voucher js-MyVoucher">
+                            <div class="flex-center">
+                                <h3 class="my-voucher__heading">My voucher</h3>
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <p>You don't have any voucher</p>
+                        </div>
+                        <div class="category">
+                            <h3 class="category__heading">Category</h3>
+                            <ul class="category__list">
+                                <li class="category__item flex-center">
+                                    <input onchange="filterSearch('CGV Voucher')" class="category__checker" type="radio" name="voucher">
+                                    <div class="category__describe flex-center">
+                                        <img class="category__brand" src="../assets/img/brand/cgv.png">
+                                        <p class="category__name">CGV Voucher</p>
+                                    </div>
+                                    <p class="category__quantity">(2)</p>
+                                </li>
+                                <li class="category__item flex-center">
+                                    <input onchange="filterSearch('Lazada Voucher')" class="category__checker" type="radio" name="voucher">
+                                    <div class="category__describe flex-center">
+                                        <img class="category__brand" src="../assets/img/brand/lazada.png">
+                                        <p class="category__name">Lazada Voucher</p>
+                                    </div>
+                                    <p class="category__quantity">(1)</p>
+                                </li>
+                                <li class="category__item flex-center">
+                                    <input onchange="filterSearch('Highlands Voucher')"  class="category__checker" type="radio" name="voucher">
+                                    <div class="category__describe flex-center">
+                                        <img class="category__brand" src="../assets/img/brand/highlands.png">
+                                        <p class="category__name">Highlands Voucher</p>
+                                    </div>
+                                    <p class="category__quantity">(1)</p>
+                                </li>
+                                <li class="category__item flex-center">
+                                    <input onchange="filterSearch('Pizza Hut Voucher')" class="category__checker" type="radio" name="voucher">
+                                    <div class="category__describe flex-center">
+                                        <img class="category__brand" src="../assets/img/brand/pizza-hut.png">
+                                        <p class="category__name">Pizza Hut Voucher</p>
+                                    </div>
+                                    <p class="category__quantity">(1)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-9 m-12 c-12">
+                        <div class="filter flex-center">
+                            <input id="filter__search" class="input-form" type="text" placeholder="Search items by keyword, price, etc">
+                            <i class="search-btn fa-solid fa-search" onclick="filterSearch()"></i>
+                        </div>
+                        <div class="my-voucher hide-on-pc js-MyVoucher" style="margin: 0; margin-top: 30px;">
+                            <div class="flex-center">
+                                <h3 class="my-voucher__heading">My voucher</h3>
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <p>You don't have any voucher</p>
+                        </div>
+                        <div class="row js-filterVoucherItem">
+                            <div class="col l-4 m-4 c-6">
+                                <div class="voucher__item">
+                                    <div class="voucher__value flex-center">
+                                        <span>500</span>
+                                        <img class="coin" src="../assets/img/coin.png">
+                                    </div>
+                                    <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-blue.png');"></div>
+                                    <div class="voucher__describe">
+                                        <p class="voucher__name">CGV Voucher</p>
+                                        <p class="voucher__date">Out of date: 20/10/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-6">
+                                <div class="voucher__item">
+                                    <div class="voucher__value flex-center">
+                                        <span class="voucher__price">100</span>
+                                        <img class="coin" src="../assets/img/coin.png">
+                                    </div>
+                                    <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-orange.png');"></div>
+                                    <div class="voucher__describe">
+                                        <p class="voucher__name">Lazada Voucher</p>
+                                        <p class="voucher__date">Out of date: 20/10/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-6">
+                                <div class="voucher__item">
+                                    <div class="voucher__value flex-center">
+                                        <span class="voucher__price">600</span>
+                                        <img class="coin" src="../assets/img/coin.png">
+                                    </div>
+                                    <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-yellow.png');"></div>
+                                    <div class="voucher__describe">
+                                        <p class="voucher__name">Highlands Voucher</p>
+                                        <p class="voucher__date">Out of date: 20/10/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-6">
+                                <div class="voucher__item">
+                                    <div class="voucher__value flex-center">
+                                        <span class="voucher__price">300</span>
+                                        <img class="coin" src="../assets/img/coin.png">
+                                    </div>
+                                    <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-light-blue.png');"></div>
+                                    <div class="voucher__describe">
+                                        <p class="voucher__name">Pizza Hut Voucher</p>
+                                        <p class="voucher__date">Out of date: 20/10/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-6">
+                                <div class="voucher__item">
+                                    <div class="voucher__value flex-center">
+                                        <span class="voucher__price">500</span>
+                                        <img class="coin" src="../assets/img/coin.png">
+                                    </div>
+                                    <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-blue.png');"></div>
+                                    <div class="voucher__describe">
+                                        <p class="voucher__name">CGV Voucher</p>
+                                        <p class="voucher__date">Out of date: 20/10/2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="grid wide">
+            <div class="footer__privacy flex-center">
+                <div class="logo">
+                    <a href="/"><img src="../assets/img/logo.png" ></a>
+                </div>
+                <div class="footer__privacy--list flex-center">
+                    <span class="footer__privacy--item"><a href="./about.html">About</a></span>
+                    <span class="footer__privacy--item"><a href="./privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="./term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="./privacy-policy.html">Bug Bounty</a></span>
+                </div>
+            </div>
+            <div class="footer__social flex-center">
+                <div class="footer__copyright">
+                    Copyright © 2024 S-Bin. All Rights Reserved.
+                </div>
+                <div class="footer__social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal js-ModalMyVoucher">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!--  My voucher -->
+            <div class="my-voucher--modal">
+                <div class="flex-center" style="justify-content: space-between; padding-bottom: 10px;">
+                    <div class="flex-center">
+                        <h1>My voucher</h1>
+                        <i style="font-size: 30px; color: var(--red-color); margin-left: 10px;" class="fa-solid fa-gift"></i>
+                    </div>
+                    <i class="js-CloseModalMyVoucher my-voucher--close fa-solid fa-xmark"></i>
+                </div>
+                <div class="row my-voucher--list">
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-blue.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">CGV Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-orange.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">Lazada Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-yellow.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">Highlands Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-light-blue.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">Pizza Hut Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="voucher__item">
+                            <div class="voucher__img" style="background-image: url('../assets/img/coupons/coupons-blue.png');"></div>
+                            <div class="voucher__describe">
+                                <p class="voucher__name">CGV Voucher</p>
+                                <p class="voucher__date">Out of date: 20/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div> 
+    </div>
+
+     <!--JS FILE  -->
+    <script src="../js/main.js"></script>
+    <script src="../js/redeem-gift.js"></script>
+    
+</body>
+</html>

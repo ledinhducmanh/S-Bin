@@ -1,5 +1,5 @@
 /* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
     --blue-color: #1497E2;
     --dark-blue: #26448a;
@@ -15,6 +15,8 @@
     --orange-color: #ff7d00;
     --header-height: 100px;
     --light-grey: #eee;
+    --ultra-light-blue: #f4f4fd;
+    --light-blue: #d6d5fa;
     --font-weight-bold: 600;
     --light-box-shadow: 0 36px 48px rgba(31, 66, 135, .04);
     --sharp-box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.1);
@@ -34,19 +36,23 @@ html::-webkit-scrollbar-thumb {
     border-radius: 26px;
 }
 .heading-section {
-    margin: 25px 0;
+    margin: 15px 0;
     text-shadow: 1px 1px var(--white-color);
+    color: var(--dark-green);
 }
 .overlay {
     position: fixed;
     z-index: 10;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     display: none;
 }
 .coin {
     height: 20px;
     padding-left: 5px;
+}
+#main {
+    padding: 50px 0;
 }
 /* Default Display Flex */
 .flex-center {
@@ -87,7 +93,7 @@ html::-webkit-scrollbar-thumb {
 .input-form {
     padding: 15px 30px;
     width: 100%;
-    background-color: var(--light-grey);
+    background: var(--light-grey);
     border: 4px solid var(--dark-green);
     border-radius: 20px;
     outline: none;
@@ -107,7 +113,7 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 .btn {
-    background-color: transparent;
+    background: transparent;
     border-radius: 30px;
     padding: 10px 45px;
     border: 4px solid var(--dark-green);
@@ -121,7 +127,7 @@ html::-webkit-scrollbar-thumb {
 }
 .btn:hover {
     opacity: 1;
-    background-color: var(--dark-green);
+    background: var(--dark-green);
     border: 4px solid var(--dark-green);
     color: var(--white-color);
 }
@@ -160,7 +166,7 @@ html::-webkit-scrollbar-thumb {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.35);
 }
 .modal__body {
     margin: auto;
@@ -168,4 +174,70 @@ html::-webkit-scrollbar-thumb {
     z-index: 1;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
 
+}
+/* Table */
+.table-responsive {
+    overflow-x: auto;
+}
+.table {
+    width: 100%;
+    color: #212529;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+}
+
+/* Định dạng cho phần tiêu đề bảng */
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background: #f8f9fa;
+    text-align: left;
+}
+/* Định dạng cho hàng */
+.table tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+.table tbody tr:nth-child(odd) {
+    background: var(--white-color);
+}
+
+.table tbody tr:hover {
+    background: #e9ecef;
+}
+
+/* Định dạng cho cột */
+.table tbody td {
+    vertical-align: middle;
+}
+/* Tab */
+.tabs {
+    list-style: none;
+    border-radius: 30px;
+    background: var(--white-color);
+    overflow: hidden;
+    box-shadow: var(--light-box-shadow);
+    margin-bottom: 20px;
+}
+.tabs-item {
+    min-width: 110px;
+    text-align: center;
+}
+.tabs-link {
+    color: var(--dark-green);
+    font-weight: 500;
+    display: block;
+    padding: 15px 25px;
+}
+.tabs-item.active {
+    background: linear-gradient(-90deg, var(--dark-green), var(--green-color));
+    color: var(--white-color);
+}
+.active .tabs-link {
+    color: var(--white-color);
 }
