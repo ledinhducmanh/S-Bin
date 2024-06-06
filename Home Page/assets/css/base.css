@@ -89,6 +89,17 @@ html::-webkit-scrollbar-thumb {
     font-weight: var(--font-weight-bold);
     margin-right: 10px;
 }
+.essay {
+    padding: 30px 50px !important;
+}
+.essay .heading__h3 {
+    color: var(--dark-green);
+    opacity: 1;
+    margin: 20px 0;
+}
+.essay .bullet li {
+    margin: 10px 0;
+}
 /* INPUT FORM */
 .input-form {
     padding: 15px 30px;

@@ -5,6 +5,7 @@
 }
 /* PC low resolution */ 
 @media (min-width: 1024px) and (max-width: 1239px) {
+    /* Leaderboard */
     .ranking__details h5 {
         max-width: 130px;
     }
@@ -14,9 +15,6 @@
     .ranking_icon::after {
         right: -24%;
     }
-    /* .ranking__details {
-        margin-left: 15px;
-    } */
 
 }
 /* Mobile & Tablet */
@@ -24,6 +22,7 @@
     .hide-on-tablet-mobile {
         display: none;
     }
+    /* Voucher */
     .voucher__name {
         font-size: 16px;
     }
@@ -36,6 +35,10 @@
     }
     .voucher__value {
         top: 7px;
+    }
+    /* Profile */
+    .profile__chart {
+        margin: 30px 0;
     }
 }
 /* Tablet */ 
@@ -81,10 +84,13 @@
     .paragraph, .bullet {
         text-align: left !important;
     }
+    /* Shop */
+    .brand-product__describe {
+        padding: 0 40px;
+    }
     /* Leaderboard */
     .top_ranking__item {
         padding: 15px;
-
     }
     .ranking_icon {
         margin: 0 5px;

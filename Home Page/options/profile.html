@@ -50,7 +50,10 @@
                         <div class="user__show-more">
                             <ul class="user__show-more__list">
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="../options/settings.html"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                    <a class="flex-center" href="../options/profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
                                 </li>
                                 <li class="user__show-more__item">
                                     <a class="flex-center" href="../options/notification.html"><i class="fa-regular fa-message"></i><span>Notification</span></a>
@@ -84,76 +87,97 @@
     </header>
     <!-- Main content -->
     <main id="main">
-        <div id="dashboard">
-            <div class="grid wide">
-                <h1 class="heading__h1">Profile</h1>
-                <div class="row">
-                    <div class="col l-4 m-12 c-12">
-                        <div class="profile">
-                            <div class="flex-center">
-                                <div class="profile__img">
-                                    <img src="../assets/img/My.jpg">
-                                </div>
-                                <div class="profile__detail">
-                                    <h4>Lê Đình Đức Mạnh</h4>
-                                    <p>lemanh@gmail.com</p>
-                                </div>
+        <div class="grid wide">
+            <h1 class="heading__h1">Profile</h1>
+            <div class="row" style="margin: 30px 0;">
+                <div class="col l-4 m-12 c-12">
+                    <div class="profile">
+                        <div class="flex-center">
+                            <div class="profile__img">
+                                <img src="../assets/img/My.jpg">
                             </div>
-                            <div class="profile__rank flex-center">
-                                <div class="profile__rank--item">
-                                    <h4 class="heading__h3">25 June 2024</h4>
-                                    <p>Registered</p>
-                                </div>
-                                <div class="profile__rank--item">
-                                    <h4 class="heading__h3">Bronze</h4>
-                                    <p>Rank</p>
-                                </div>
+                            <div class="profile__detail">
+                                <h4>Lê Đình Đức Mạnh</h4>
+                                <p>lemanh@gmail.com</p>
                             </div>
-                            <ul class="profile__options">
-                                <li class="profile__options--item flex-center">
-                                    <div class="profile__options--icon" style="background: linear-gradient(180deg, #f5e06b, #f7ae09); "></div>
-                                    <p class="profile__options--name">Coin Earned</p>
-                                    <div class="profile__options--angle">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </div>
-                                </li>
-                                <li class="profile__options--item flex-center">
-                                    <div class="profile__options--icon" style="background: linear-gradient(180deg, #6bb0f5, #0988f7); "></div>
-                                    <p class="profile__options--name">Offers Completed</p>
-                                    <div class="profile__options--angle">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </div>
-                                </li>
-                                <li class="profile__options--item flex-center">
-                                    <div class="profile__options--icon" style="background: linear-gradient(180deg, #f56b8e, #f7094c); "></div>
-                                    <p class="profile__options--name">Order Placed</p>
-                                    <div class="profile__options--angle">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </div>
-                                </li>
-                                <li class="profile__options--item flex-center">
-                                    <div class="profile__options--icon" style="background: linear-gradient(180deg, #6bf574, #09f731);" ></div>
-                                    <p class="profile__options--name">Referrals</p>
-                                    <div class="profile__options--angle">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
-                    <div class="col l-4 m-12 c-12">
-                        <div class="profile__chart">
+                        <div class="profile__rank flex-center">
+                            <div class="profile__rank--item">
+                                <h4 class="heading__h3">25 June 2024</h4>
+                                <p>Registered</p>
+                            </div>
+                            <div class="profile__rank--item">
+                                <h4 class="heading__h3">Bronze</h4>
+                                <p>Rank</p>
+                            </div>
+                        </div>
+                        <ul class="profile__options">
                             <li class="profile__options--item flex-center">
                                 <div class="profile__options--icon" style="background: linear-gradient(180deg, #f5e06b, #f7ae09); "></div>
                                 <p class="profile__options--name">Coin Earned</p>
-                                <p class="profile__options--name">All Time</p>
+                                <div class="profile__options--angle">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
                             </li>
-                        </div>
-                        
+                            <li class="profile__options--item flex-center">
+                                <div class="profile__options--icon" style="background: linear-gradient(180deg, #6bb0f5, #0988f7); "></div>
+                                <p class="profile__options--name">Offers Completed</p>
+                                <div class="profile__options--angle">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </li>
+                            <li class="profile__options--item flex-center">
+                                <div class="profile__options--icon" style="background: linear-gradient(180deg, #f56b8e, #f7094c); "></div>
+                                <p class="profile__options--name">Order Placed</p>
+                                <div class="profile__options--angle">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </li>
+                            <li class="profile__options--item flex-center">
+                                <div class="profile__options--icon" style="background: linear-gradient(180deg, #6bf574, #09f731);" ></div>
+                                <p class="profile__options--name">Referrals</p>
+                                <div class="profile__options--angle">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div class="col l-8 m-12 c-12">
+                    <div class="profile__chart">
+                        <div class="flex-center">
+                            <div class="profile__options--item flex-center">
+                                <div class="profile__options--icon" style="background: linear-gradient(180deg, #f5e06b, #f7ae09); "></div>
+                                <p class="profile__options--name">Coin Earned</p>
+                            </div>
+                            <p class="tabs-current hide-on-mobile">Year</p>
+                            <ul class="tabs flex-center hide-on-mobile" id="myTab" role="tablist">
+                                <li class="tabs-item active">
+                                    <a href="#year" class="tabs-link">Year</a>
+                                </li>
+                                <li class="tabs-item">
+                                    <a href="#week" class="tabs-link">Week</a>
+                                </li>
+                                <li class="tabs-item">
+                                    <a href="#month" class="tabs-link">Month</a>
+                                </li>
+                            </ul>
+                            <select class="hide-on-pc hide-on-tablet" id="duration" name="duration">
+                                <option value="year">Year</option>
+                                <option value="week">Week</option>
+                                <option value="month">Month</option>
+                            </select>
+                        </div>
+                        <div class="profile__total-earned">
+                            <h1 id="total-earned">406</h1>
+                            <p>Coin earned</p>
+                        </div>
+                        <canvas id="myChart"></canvas>
+                    </div> 
                 </div>
             </div>
         </div>
+    
     </main>
     <!-- Footer -->
     <footer id="footer">
@@ -163,10 +187,10 @@
                     <a href="/"><img src="../assets/img/logo.png" ></a>
                 </div>
                 <div class="footer__privacy--list flex-center">
-                    <span class="footer__privacy--item"><a href="./about.html">About</a></span>
-                    <span class="footer__privacy--item"><a href="./privacy-policy.html">Privacy Policy</a></span>
-                    <span class="footer__privacy--item"><a href="./term&service.html">Term & Service</a></span>
-                    <span class="footer__privacy--item"><a href="./privacy-policy.html">Bug Bounty</a></span>
+                    <span class="footer__privacy--item"><a href="../pages/about.html">About</a></span>
+                    <span class="footer__privacy--item"><a href="../pages/privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="../pages/term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="../pages/bug-bunty.html">Bug Bounty</a></span>
                 </div>
             </div>
             <div class="footer__social flex-center">
@@ -180,9 +204,10 @@
             </div>
         </div>
     </footer>
-    
+    <!-- JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
      <!--JS FILE  -->
     <script src="../js/main.js"></script>
-
+    <script src="../js/profile.js"></script>
 </body>
 </html>

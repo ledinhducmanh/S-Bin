@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
 </head>
 <body>
+    <div id="preload"></div>
     <!-- Header -->
     <header id="header">
         <div class="grid wide">
@@ -23,10 +24,10 @@
                 </div>
                 <nav class="navbar hide-on-tablet-mobile">
                     <ul class="navbar__list flex-center">
-                        <li class="navbar__item"><a class="navbar__link" href="/">My Offer</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/">Top Ranking</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/">Event</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/">QR Scanner</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/shop.html">Shop</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/support.html">Support</a></li>
                     </ul>
                 </nav>
                 <div class="user-info flex-center">
@@ -48,16 +49,19 @@
                         <div class="user__show-more">
                             <ul class="user__show-more__list">
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="./settings.html"><i class="fa-regular fa-user"></i><span>Settings</span></a>
+                                    <a class="flex-center" href="../options/profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="#"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                    <a class="flex-center" href="../options/settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="./history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                    <a class="flex-center" href="../options/notification.html"><i class="fa-regular fa-message"></i><span>Notification</span></a>
                                 </li>
                                 <li class="user__show-more__item">
-                                    <a class="flex-center" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                    <a class="flex-center" href="../options/history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../login/"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -70,10 +74,11 @@
                 <label for="menu-mobile" class="overlay"></label>
                 <div class="menu-mobile">
                     <ul>
-                        <li><a href="/">My Offer</a></li>
-                        <li><a href="/">Top Ranking</a></li>
-                        <li><a href="/">Event</a></li>
-                        <li><a href="/">QR Scanner</a></li>
+                        <li><a href="../pages/shop.html">Shop</a></li>
+                        <li><a href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li><a href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li><a href="../pages/support.html">Support</a></li>
+                        <li><a href="../pages/qr-scanner.html">QR Scanner</a></li>
                     </ul>
                 </div>
             </div>
@@ -143,10 +148,10 @@
                     <a href="/"><img src="../assets/img/logo.png" ></a>
                 </div>
                 <div class="footer__privacy--list flex-center">
-                    <span class="footer__privacy--item"><a href="../sites/about.html#">About</a></span>
-                    <span class="footer__privacy--item"><a href="../sites/privacy-policy.html">Privacy Policy</a></span>
-                    <span class="footer__privacy--item"><a href="../sites/term&service.html">Term & Service</a></span>
-                    <span class="footer__privacy--item"><a href="../sites/bug-bunty.html">Bug Bounty</a></span>
+                    <span class="footer__privacy--item"><a href="../pages/about.html">About</a></span>
+                    <span class="footer__privacy--item"><a href="../pages/privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="../pages/term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="../pages/bug-bunty.html">Bug Bounty</a></span>
                 </div>
             </div>
             <div class="footer__social flex-center">
@@ -160,6 +165,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
     <script>
         // Handle All Read
         const unReadMessages = document.querySelectorAll('.unread');
