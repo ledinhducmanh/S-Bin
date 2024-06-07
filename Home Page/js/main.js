@@ -25,4 +25,7 @@ const preLoadingPage = document.getElementById('preload')
 window.addEventListener('load', () => {
     preLoadingPage.style.opacity = 0;
     preLoadingPage.style.visibility = 'hidden';
+    setTimeout(() => {
+        preLoadingPage.remove()
+    }, 1000)
 });
