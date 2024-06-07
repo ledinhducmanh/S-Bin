@@ -1,0 +1,180 @@
+<!-- SHOP -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Bin Home Page</title>
+    <!-- Css Link File -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.min.css">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/background/logo.png" type="image/x-icon">
+
+    <style>
+        body { background:  none !important;}
+    </style>
+</head>
+<body>
+    <div id="preload"></div>
+    <!-- Header -->
+    <header id="header">
+        <div class="grid wide">
+            <div class="header flex-center">
+                <div class="logo flex-center">
+                    <a href="/"><img src="../assets/img/logo.png" ></a><a href="/">S-Bin</a>
+                </div>
+                <nav class="navbar hide-on-tablet-mobile">
+                    <ul class="navbar__list flex-center">
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/shop.html">Shop</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="../pages/support.html">Support</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info flex-center">
+                    <div class="navbar__coin-reward flex-center">
+                        <div class="navbar__coin-reward__icon flex-center">
+                            <span>2500</span>
+                            <img class="coin" src="../assets/img/coin.png">
+                        </div>
+                        <div class="navbar__coin-reward__total">
+                            <span>5000 RCL</span>
+                        </div>
+                    </div>
+                    <div class="user__profile">
+                        <div class="user__img flex-center">
+                            <img src="../assets/img/My.jpg">
+                            <p class="user__name hide-on-mobile">Le Manh</p>
+                            <i class="user__icon fa-solid fa-angle-down hide-on-mobile"></i>
+                        </div>
+                        <div class="user__show-more">
+                            <ul class="user__show-more__list">
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/notification.html"><i class="fa-regular fa-message"></i><span>Notification</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../options/history.html"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+                                </li>
+                                <li class="user__show-more__item">
+                                    <a class="flex-center" href="../login/"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="menu-mobile__btn hide-on-pc" for="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input class="menu-input" type="checkbox" hidden id="menu-mobile">
+                <label for="menu-mobile" class="overlay"></label>
+                <div class="menu-mobile">
+                    <ul>
+                        <li><a href="../pages/shop.html">Shop</a></li>
+                        <li><a href="../pages/redeem-gift.html">Redeem Gift</a></li>
+                        <li><a href="../pages/leaderboard.html">Leaderboard</a></li>
+                        <li><a href="../pages/support.html">Support</a></li>
+                        <li><a href="../pages/qr-scanner.html">QR Scanner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main id="main">
+        <div id="support">
+            <div class="grid wide">
+                <h3 class="heading__h3">Support System</h3>
+                <h1 class="heading-section">Create Ticket</h1>
+                <div class="create_ticket-form card">
+                    <div class="card-header">
+                        <h3 class="heading__h3">Create</h3>
+                        <a class="text-warning" href="../pages/support.html">Cancel</a>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" >
+                            <div class="form-group">
+                                <label for="questionType">What type of question do you have?</label>
+                                <select id="questionType" class="form-control">
+                                    <option value="earning">Earning</option>
+                                    <option value="withdrawals">Withdrawals</option>
+                                    <option value="profile">Profile</option>
+                                    <option value="general">General</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="employeeRespond">Employee Respond</label>
+                                <select id="employeeRespond" class="form-control">
+                                    <option value="earning">Earning</option>
+                                    <option value="withdrawals">Withdrawals</option>
+                                    <option value="profile">Profile</option>
+                                    <option value="general">General</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredLanguage">What language do you prefer to be answered?</label>
+                                <select id="preferredLanguage" class="form-control">
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="french">French</option>
+                                    <option value="german">German</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="problemDescription">Please provide a description of the problem you are encountering</label>
+                                <textarea id="problemDescription" rows="5" class="form-control"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn">Create</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="grid wide">
+            <div class="footer__privacy flex-center">
+                <div class="logo">
+                    <a href="/"><img src="../assets/img/logo.png" ></a>
+                </div>
+                <div class="footer__privacy--list flex-center">
+                    <span class="footer__privacy--item"><a href="./about.html">About</a></span>
+                    <span class="footer__privacy--item"><a href="./privacy-policy.html">Privacy Policy</a></span>
+                    <span class="footer__privacy--item"><a href="./term&service.html">Term & Service</a></span>
+                    <span class="footer__privacy--item"><a href="./bug-bunty.html">Bug Bounty</a></span>
+                </div>
+            </div>
+            <div class="footer__social flex-center">
+                <div class="footer__copyright">
+                    Copyright © 2024 S-Bin. All Rights Reserved.
+                </div>
+                <div class="footer__social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+     <!--JS FILE  -->
+    <script src="../js/main.js"></script>
+    <script src="../js/validation.js"></script>
+
+</body>
+</html>

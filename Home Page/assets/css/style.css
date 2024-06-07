@@ -870,7 +870,7 @@ body {
 #duration {
     padding: 14px 15px;
     font-size: 16px;
-    opacity: .6;
+    opacity: .8;
     color: var(--black-color);
     font-weight: var(--font-weight-bold);
     margin-left: 20px;
@@ -967,4 +967,90 @@ body {
     height: 0;
     overflow: hidden;
     transition: all 1s;
+}
+.content img {
+    margin: 30px 0;
+    border: 1px solid var(--dark-green);
+    width: 100%;
+}
+/* Support System */
+.card {
+    border-radius: 12px;
+    box-shadow: var(--light-box-shadow);
+    margin: 40px 0;
+    overflow: hidden;
+}
+.card-header {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clear_notification {
+    font-size: 16px;
+}
+.card-body {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    opacity: .6;
+    font-size: 14px;
+}
+.create_ticket .card-body {
+    flex-direction: column;
+    text-align: center;
+}
+.text-warning {
+    color: var(--orange-color);
+}
+
+.text-primary {
+    color: var(--dark-green);
+    text-decoration: none;
+}
+
+.text-primary:hover {
+    text-decoration: underline;
+}
+/* Create Ticket */
+.create_ticket-form .card-body {
+    width: 100%; 
+    display: block;
+}
+.create_ticket-form .form-group {
+    margin: 20px 0;
+}
+.create_ticket-form .form-group label {
+    display: block;
+    color: var(--dark-color);
+    font-weight: var(--font-weight-bold);
+    font-size: 15px;
+}
+.create_ticket-form .form-control {
+    width: 100%;
+    font-size: 16px;
+    background: var(--white-color);
+    border-radius: 25px;
+    padding: 15px;
+    border: 2px solid var(--dark-color);
+}
+.create_ticket-form .form-control:focus {
+    border-color: var(--green-color);
+}
+.create_ticket-form .form-control:hover {
+    border-color: var(--green-color);
+}
+.create_ticket-form .btn {
+    opacity: 1;
+}
+textarea.form-control {
+    resize: vertical;
+}
+
+.text-center {
+    text-align: center;
 }
