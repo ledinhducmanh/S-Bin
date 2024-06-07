@@ -1,39 +1,47 @@
-### Bố cục sắp xếp cấu trúc thư mục
 /my-website
 │
 ├── /assets                    # Chứa tất cả các tài nguyên tĩnh
 │   ├── /css                   # Thư mục chứa các file CSS
-│   │   ├── main.css           # File CSS chính cho toàn bộ trang web
-│   │   ├── reset.css          # File CSS dùng để reset các mặc định của trình duyệt
-│   │   └── styles.css         # File CSS chứa các kiểu dáng bổ sung
+│   │   ├── styles.css         # File CSS chính cho toàn bộ trang web
+│   │   ├── base.css           # File CSS dùng để reset các mặc định của trình duyệt
+│   │   ├── grid.min.css       # File CSS Grid
+│   │   └── responsive.css     # File CSS chứa các kiểu dáng bổ sung cho từng thiết bị
 │   │
-│   ├── /js                    # Thư mục chứa các file JavaScript
-│   │   ├── main.js            # File JS chính cho toàn bộ trang web
-│   │   ├── utils.js           # File JS chứa các hàm tiện ích
-│   │   └── vendor.js          # File JS chứa các thư viện bên thứ ba
+│   ├── /img                  # Thư mục chứa các hình ảnh
+│   │   ├── background        # Thư mục chứa các hình ảnh nền
+│   │   ├── brand             # Thư mục chứa các hình ảnh thương hiệu
+│   │   ├── coupons           # Thư mục chứa các hình ảnh liên quan đến phiếu giảm giá
+│   │   ├── rank              # Thư mục chứa các hình ảnh liên quan đến thứ hạng
+│   │   └── social            # Thư mục chứa các hình ảnh liên quan đến mạng xã hội
 │   │
-│   ├── /images                # Thư mục chứa các hình ảnh
-│   │   ├── logo.png           # Logo của trang web
-│   │   ├── background.jpg     # Hình nền
-│   │   └── /icons             # Thư mục chứa các biểu tượng (icons)
-│   │
-│   └── /fonts                 # Thư mục chứa các file font
-│       ├── OpenSans-Regular.ttf # Font OpenSans Regular
-│       └── Roboto-Bold.ttf    # Font Roboto Bold
+│   └── /js                    # Thư mục chứa các file JavaScript
+│       ├── main.js            # File JS chứa những thứ chung cho toàn bộ trang web
+│       ├── validation.js      # File JS chứa thư viện Validation
+│       ├── profile.js         # Tệp JavaScript cho trang Hồ sơ
+│       ├── redeem-gift.js     # Tệp JavaScript cho trang Đổi quà
+│       ├── support.js         # Tệp JavaScript cho trang Hỗ trợ
+│       └── about.js           # Tệp JavaScript cho trang Giới thiệu
 │
 ├── /pages                     # Thư mục chứa các trang HTML
-│   ├── index.html             # Trang chủ
-│   ├── about.html             # Trang giới thiệu
-│   ├── contact.html           # Trang liên hệ
-│   └── services.html          # Trang dịch vụ
+│   ├── about.html             # Trang Giới thiệu
+│   ├── bug-bunty.html         # Trang Bug Bunny
+│   ├── create-ticket.html     # Trang Tạo vé hỗ trợ
+│   ├── leaderboard.html       # Trang Bảng xếp hạng
+│   ├── privacy-policy.html    # Trang Chính sách bảo mật
+│   ├── qr-scanner.html        # Trang Quét mã QR
+│   ├── redeem-gift.html       # Trang Đổi quà tặng
+│   ├── shop.html              # Trang Cửa hàng
+│   ├── support.html           # Trang Hỗ trợ
+│   └── term-service.html      # Trang Điều khoản dịch vụ
 │
-├── /includes                  # Thư mục chứa các thành phần HTML tái sử dụng
-│   ├── header.html            # Thành phần header
-│   ├── footer.html            # Thành phần footer
-│   └── nav.html               # Thành phần điều hướng (navigation)
+├── /options                   # Thư mục chứa các trang HTML
+│   ├── history.html           # Trang Lịch sử
+│   ├── notification.html      # Trang Thông báo
+│   ├── profile.html           # Trang Cá nhân
+│   └── settings.html          # Trang Cài đặt
 │
-├── /data                      # Thư mục chứa các file dữ liệu
-│   └── data.json              # File dữ liệu JSON
+├── /login                     # Thư mục chứa các tệp liên quan đến quá trình đăng nhập
+│   └── options                # Thư mục chứa các tùy chọn đăng nhập
 │
-└── README.md                  # File README chứa
-
+├── index.html                 # Trang chủ
+└── README.md                  # Tệp hướng dẫn sử dụng Markdown
