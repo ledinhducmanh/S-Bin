@@ -1,6 +1,3 @@
-// Unset .html
-// window.history.pushState({}, document.title, window.location.pathname.replace('.html', ''));
-
 // Handle title change
 var titles = [
     "This is the S-Bin website!",
@@ -29,3 +26,30 @@ window.addEventListener('load', () => {
         preLoadingPage.remove()
     }, 1000)
 });
+
+// destroy iOS
+const userImg = document.querySelector('.user__profile');
+
+if (userImg) {
+    let isVisible = false;
+
+    userImg.onclick = () => {
+        const showMore = userImg.querySelector('.user__show-more');
+        if (showMore) {
+            if (isVisible) {
+                showMore.style.visibility = 'hidden';
+                showMore.style.transform = 'scale(0)';
+                showMore.style.opacity = '0';
+            } else {
+                showMore.style.visibility = 'visible';
+                showMore.style.transform = 'scale(1)';
+                showMore.style.opacity = '1';
+            }
+            isVisible = !isVisible;  // Toggle the state
+        } else {
+            console.log('Show more element not found');
+        }
+    };
+} else {
+    console.log('User profile image not found');
+}
