@@ -56,6 +56,9 @@
     .hide-on-tablet {
         display: none;
     }
+    .js-img {
+        height: 480px !important;
+    }
     
 }
 /* Mobile */
@@ -131,5 +134,8 @@
     }
     .top_list__list {
         padding: 0px 15px;
+    }
+    .js-img {
+        height: 200px !important;
     }
 }

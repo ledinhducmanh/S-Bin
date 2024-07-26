@@ -183,8 +183,6 @@ html::-webkit-scrollbar-thumb {
     margin: auto;
     position: relative;
     z-index: 1;
-    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
-
 }
 /* Table */
 .table-responsive {
@@ -251,4 +249,21 @@ html::-webkit-scrollbar-thumb {
 }
 .active .tabs-link {
     color: var(--white-color);
+}
+/* Zoomable img */
+.zoomable {
+    position: fixed;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.zoomable button {
+    background: var(--white-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--sharp-box-shadow);
+    margin: 0 2px;
+}
+.zoomable i {
+    padding: 12px;
 }

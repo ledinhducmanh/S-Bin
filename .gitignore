@@ -1,0 +1,17 @@
+# Ignore bundle.json
+Home Page/bundle.json
+
+# Ignore dist directory
+Home Page/dist/
+
+# Ignore gulpfile.js
+Home Page/gulpfile.js
+
+# Ignore node_modules directory
+Home Page/node_modules/
+
+# Ignore package-lock.json
+Home Page/package-lock.json
+
+# Ignore package.json
+Home Page/package.json

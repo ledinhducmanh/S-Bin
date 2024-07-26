@@ -37,3 +37,45 @@ function toggleContent(index) {
         currentIcon.classList.add('fa-plus');
     }
 }
+
+const myImgModal = document.querySelector('.js-ModalImg')
+const myImgModalOverlay = document.querySelector('.js-ModalImg .modal__body')
+const imgModal = document.querySelector('.js-img')
+
+function openImgModal(content) {
+    const img = content.querySelector('img')
+    imgModal.src = img.src
+    imgModal.style.borderRadius = "20px"
+    myImgModal.classList.add("open")
+    document.body.style.overflow = "hidden"
+}
+function closeImgModal() {
+    myImgModal.classList.remove("open")
+    document.body.style.overflow = "auto"
+}
+const zoomUp = document.querySelector('.zoom-up')
+const zoomDown = document.querySelector('.zoom-down')
+const zoomTranLeft = document.querySelector('.zoom-tran-left')
+const zoomTranRight = document.querySelector('.zoom-tran-right')
+
+let scale = 1;
+let translateX = 0
+
+zoomUp.onclick = () => {
+    scale += 0.2;
+    imgModal.style.transform = `scale(${scale}) translateX(${translateX}px)`;
+};
+zoomDown.onclick = () => {
+    scale -= 0.2;
+    scale = Math.max(0.2, scale); // Ensure scale doesn't go below a minimum value
+    imgModal.style.transform = `scale(${scale}) translateX(${translateX}px)`;
+};
+zoomTranLeft.onclick = () => {
+    translateX += 20; // Translate left by 20px
+    imgModal.style.transform = `scale(${scale}) translateX(${translateX}px)`;
+};
+
+zoomTranRight.onclick = () => {
+    translateX -= 20; // Translate right by 20px
+    imgModal.style.transform = `scale(${scale}) translateX(${translateX}px)`;
+};

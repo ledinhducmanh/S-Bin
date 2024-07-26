@@ -1,4 +1,4 @@
-<!-- SHOP -->
+<!-- SUPPORT -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../assets/css/grid.min.css">
     <!-- Font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="../assets/img/background/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="..\/assets/img/background/logo.png" type="image/x-icon">
 
     <style>
         body { background:  none !important;}
@@ -105,7 +105,7 @@
                         What does your website do?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>Our website helps users earn reward codes by using coins. Users can earn coins by going to an S-Bin trash can, disposing of trash, and scanning a code that appears afterwards.</p>
                         <img src="../assets/img/background/example.png" alt="User scanning code at S-Bin" class="image">
                     </div>
@@ -116,7 +116,7 @@
                         How do I earn coins on your website?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>To earn coins, users need to go to an S-Bin trash can, dispose of trash, and scan the code that appears after disposal. Each successful scan rewards a certain amount of coins.</p>
                         <img src="../assets/img/background/example.png" alt="Coins earned" class="image">
                     </div>
@@ -127,7 +127,7 @@
                         What can I use coins for?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>Coins you earn can be used to redeem reward codes on our website. These codes can be for discounts, gifts, or other exciting rewards.</p>
                         <img src="../assets/img/background/example.png" alt="Redeem rewards" class="image">
                     </div>
@@ -138,7 +138,7 @@
                         What do I need to start using the service?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>You just need to register an account on our website. Then you can go to the nearest S-Bin trash cans to start earning coins.</p>
                         <img src="../assets/img/background/example.png" alt="User registration" class="image">
                     </div>
@@ -149,7 +149,7 @@
                         How many coins can I earn per scan?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>The number of coins you earn per scan may vary depending on the type of trash and our current policies. Details will be updated on the website.</p>
                         <img src="../assets/img/background/example.png" alt="Coins per scan" class="image">
                     </div>
@@ -160,7 +160,7 @@
                         Can I scan codes from S-Bin trash cans anywhere?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>You can scan codes from S-Bin trash cans supported by our system. Please check the list of supported locations on our website.</p>
                         <img src="../assets/img/background/example.png" alt="Supported locations" class="image">
                     </div>
@@ -171,7 +171,7 @@
                         How do I recognize an S-Bin trash can?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>S-Bin trash cans will have a specific label and instructions on how to scan the code after disposing of trash. You can find detailed information and illustrations on our website.</p>
                         <img src="../assets/img/background/example.png" alt="S-Bin trash can" class="image">
                     </div>
@@ -182,7 +182,7 @@
                         What should I do if the code scan fails?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>If you encounter an issue while scanning the code, please check your internet connection and ensure you followed the instructions correctly. If the problem persists, please contact our customer support for assistance.</p>
                         <img src="../assets/img/background/example.png" alt="Scan fail support" class="image">
                     </div>
@@ -193,7 +193,7 @@
                         Is there a limit on the number of scans per day?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>There may be a limit on the number of scans per day to ensure fairness and sustainability of the system. Please check our website for more details.</p>
                         <img src="../assets/img/background/example.png" alt="Daily scan limit" class="image">
                     </div>
@@ -204,7 +204,7 @@
                         How do I redeem rewards with the coins I've earned?
                         <i class="fas fa-plus icon"></i>
                     </button>
-                    <div class="content">
+                    <div class="content" onclick="openImgModal(this)">
                         <p>Once you've accumulated enough coins, you can go to the "Redeem Rewards" section on our website, select your desired reward, and follow the steps to redeem it.</p>
                         <img src="../assets/img/background/example.png" alt="Redeem process" class="image">
                     </div>
@@ -259,7 +259,21 @@
             </div>
         </div>
     </footer>
-    
+    <div class="modal js-ModalImg">
+        <div class="modal__overlay" onclick="closeImgModal()"></div>
+        <div class="modal__body">
+            <div class="img__modal">
+                <img style="height: 600px; transition: .3s;" class="js-img" src="">
+                <div class="zoomable">
+                    <button><i class="zoom-tran-left fa-solid fa-angle-left"></i></button>
+                    <button><i class="zoom-up fa-solid fa-plus"></i></button>
+                    <button><i class="zoom-down fa-solid fa-minus"></i></button>
+                    <button><i class="zoom-tran-right fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
      <!--JS FILE  -->
     <script src="../js/main.js"></script>
     <script src="../js/support.js"></script>

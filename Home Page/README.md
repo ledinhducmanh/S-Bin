@@ -7,20 +7,20 @@
 │   │   ├── grid.min.css       # File CSS Grid
 │   │   └── responsive.css     # File CSS chứa các kiểu dáng bổ sung cho từng thiết bị
 │   │
-│   ├── /img                  # Thư mục chứa các hình ảnh
-│   │   ├── background        # Thư mục chứa các hình ảnh nền
-│   │   ├── brand             # Thư mục chứa các hình ảnh thương hiệu
-│   │   ├── coupons           # Thư mục chứa các hình ảnh liên quan đến phiếu giảm giá
-│   │   ├── rank              # Thư mục chứa các hình ảnh liên quan đến thứ hạng
-│   │   └── social            # Thư mục chứa các hình ảnh liên quan đến mạng xã hội
-│   │
-│   └── /js                    # Thư mục chứa các file JavaScript
-│       ├── main.js            # File JS chứa những thứ chung cho toàn bộ trang web
-│       ├── validation.js      # File JS chứa thư viện Validation
-│       ├── profile.js         # Tệp JavaScript cho trang Hồ sơ
-│       ├── redeem-gift.js     # Tệp JavaScript cho trang Đổi quà
-│       ├── support.js         # Tệp JavaScript cho trang Hỗ trợ
-│       └── about.js           # Tệp JavaScript cho trang Giới thiệu
+│   └── /img                   # Thư mục chứa các hình ảnh
+│       ├── /background        # Thư mục chứa các hình ảnh nền
+│       ├── /brand             # Thư mục chứa các hình ảnh thương hiệu
+│       ├── /coupons           # Thư mục chứa các hình ảnh liên quan đến phiếu giảm giá
+│       ├── /rank              # Thư mục chứa các hình ảnh liên quan đến thứ hạng
+│       └── /social            # Thư mục chứa các hình ảnh liên quan đến mạng xã hội
+│
+├── /js                        # Thư mục chứa các file JavaScript
+│   ├── main.js                # File JS chứa những thứ chung cho toàn bộ trang web
+│   ├── validation.js          # File JS chứa thư viện Validation
+│   ├── profile.js             # Tệp JavaScript cho trang Hồ sơ
+│   ├── redeem-gift.js         # Tệp JavaScript cho trang Đổi quà
+│   ├── support.js             # Tệp JavaScript cho trang Hỗ trợ
+│   └── about.js               # Tệp JavaScript cho trang Giới thiệu
 │
 ├── /pages                     # Thư mục chứa các trang HTML
 │   ├── about.html             # Trang Giới thiệu
@@ -41,7 +41,23 @@
 │   └── settings.html          # Trang Cài đặt
 │
 ├── /login                     # Thư mục chứa các tệp liên quan đến quá trình đăng nhập
-│   └── options                # Thư mục chứa các tùy chọn đăng nhập
+│   └── /options               # Thư mục chứa các tùy chọn đăng nhập
 │
 ├── index.html                 # Trang chủ
 └── README.md                  # Tệp hướng dẫn sử dụng Markdown
+
+
+
+-- COMMAND GULP
+npm  uninstall --global gulp-cli
+npm install --global gulp-cli
+
+npm init
+npm install --save-dev gulp
+gulp --version
+touch gulpfile.js
+
+npm install gulp gulp-concat gulp-minify gulp-clean-css gulp-less
+
+gulp
+npm run create-bundles
