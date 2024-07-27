@@ -100,3 +100,22 @@ const app = {
     }
 }
 app.start()
+
+
+const popupBtnList = document.querySelectorAll('.js-popup')
+const popupModal = document.querySelector('.js-Modalpopup')
+const popupCloseBtnList = document.querySelectorAll('.js-CloseModalpopup')
+
+popupBtnList.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        popupModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    });
+})
+
+popupCloseBtnList.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        popupModal.classList.remove('open');
+        document.body.style.overflow = 'auto';
+    });
+});

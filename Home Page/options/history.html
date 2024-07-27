@@ -89,10 +89,23 @@
     <main id="main">
         <div class="grid wide">
             <h1 class="heading__h1">Earning History</h1>
-            <div class="flex-center">
-                <input id="history-search" type="text" class="input-form" placeholder="Search history">
-                <i onclick="filterSearch()" class="search-btn fa-solid fa-search"></i>
+            <div class="flex-center hide-on-mobile">
+                <input type="text" class="input-form history-search" placeholder="Search history">
+                <i onclick="filterSearch(document.querySelectorAll('.history-search')[0])" class="search-btn fa-solid fa-search"></i>
                 <select id="duration" name="duration">
+                    <option value="all-time">All time</option>
+                    <option value="24h">24 H</option>
+                    <option value="7d">7D</option>
+                    <option value="14d">14D</option>
+                    <option value="30d">30D</option>
+                </select>
+            </div>
+            <div class="hide-on-pc hide-on-tablet">
+                <div class="flex-center">
+                    <input type="text" class="input-form history-search" placeholder="Search history">
+                    <i onclick="filterSearch(document.querySelectorAll('.history-search')[1])" class="search-btn fa-solid fa-search"></i>
+                </div>
+                <select id="duration" name="duration" style="margin: 20px 0 0 0;">
                     <option value="all-time">All time</option>
                     <option value="24h">24 H</option>
                     <option value="7d">7D</option>
@@ -246,16 +259,17 @@
         </div>
     </main>
     <script>
-        var historySearch = document.getElementById("history-search");
-
-        historySearch.addEventListener('keydown', (e) => {
+        var historySearch = document.querySelectorAll(".history-search");
+        historySearch.forEach((historySearchItem) => {
+            historySearchItem.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
-                filterSearch();
+                filterSearch(historySearchItem);
             }
         });
+        })
 
-        var filterSearch = () => {
-            var filter = historySearch.value.trim().toUpperCase();
+        var filterSearch = (historySearchItem) => {
+            var filter = historySearchItem.value.trim().toUpperCase();
             var tableItems = document.querySelectorAll('.table-item');
             
             for (var i = 0; i < tableItems.length; i++) {

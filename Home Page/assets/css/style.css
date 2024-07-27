@@ -168,7 +168,7 @@ body {
 }
 .menu-mobile {
     position: fixed;
-    background: var(--white-color) url('/assets/img/recycle.png') bottom 50px right 100px;
+    background: var(--white-color);
     width: 200px;
     z-index: 10;
     bottom: 0; top: 0; right: 0;

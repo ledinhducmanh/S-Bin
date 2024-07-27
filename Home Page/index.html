@@ -191,7 +191,7 @@
                                     <h4>Bonus code</h4>
                                     <p>On behalf of our organization, we acknowledge and greatly appreciate your positive contributions to our project.</p>
                                 </div>
-                                <button class="bonus-code__btn">
+                                <button class="js-popup bonus-code__btn">
                                     Claim
                                 </button>
                             </div>
@@ -251,7 +251,7 @@
                                         <h3 class="heading__h3">Earn 25</h3>
                                         <img class="coin" src="./assets/img/coin.png">
                                     </div>
-                                    <button class="bonus-code__btn">
+                                    <button class="js-popup bonus-code__btn">
                                         Claim
                                     </button>
                                 </li>
@@ -271,7 +271,7 @@
                                         <h3 class="heading__h3">Earn 20</h3>
                                         <img class="coin" src="./assets/img/coin.png">
                                     </div>
-                                    <button class="bonus-code__btn">
+                                    <button class="js-popup bonus-code__btn">
                                         Claim
                                     </button>
                                 </li>
@@ -307,7 +307,17 @@
             </div>
         </div>
     </footer>
-    
+    <div class="modal js-Modalpopup">
+        <div class="modal__overlay js-CloseModalpopup"></div>
+        <div class="modal__body">
+            <div class="popup__modal">
+                <img src="./assets/img/gem0.png" alt="">
+                <h1 class="popup__header">Congratulations!</h1>
+                <p class="popup__describe">Earn free coin by clicking claim now every single day!</p>
+                <button class="js-CloseModalpopup btn">Claim</button>
+            </div>
+        </div>
+    </div>
      <!--JS FILE  -->
     <script src="../js/main.js"></script>
 </body>
