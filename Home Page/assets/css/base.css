@@ -267,3 +267,16 @@ html::-webkit-scrollbar-thumb {
 .zoomable i {
     padding: 12px;
 }
+/* Modal Pop up */
+.popup__modal {
+    background: var(--white-color);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 40px;
+}
+.popup__describe {
+    width: 500px;
+    padding: 20px;
+    font-size: 18px;
+    color: var(--super-dark-green);
+}
