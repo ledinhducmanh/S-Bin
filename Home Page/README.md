@@ -1,3 +1,4 @@
+```
 /my-website
 │
 ├── /assets                    # Chứa tất cả các tài nguyên tĩnh
@@ -61,3 +62,4 @@ npm install gulp gulp-concat gulp-minify gulp-clean-css gulp-less
 
 gulp
 npm run create-bundles
+```
