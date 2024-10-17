@@ -225,3 +225,7 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+.swiper {
+    height: 400px !important;
+}
